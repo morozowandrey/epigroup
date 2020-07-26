@@ -1,31 +1,30 @@
 {
-  "name": "gatsby-netlify-form-example",
-  "description": "Gatsby Netlify Form example",
-  "version": "1.0.0",
-  "author": "swyx <swyx@dontemail.me>",
-  "dependencies": {
-    "gatsby": "^2.13.35",
-    "gatsby-plugin-react-helmet": "^3.1.2",
-    "netlify-lambda": "^1.6.0",
-    "react": "^16.8.6",
-    "react-async-script": "^0.9.1",
-    "react-dom": "^16.8.6",
-    "react-google-recaptcha": "^1.1.0",
-    "react-helmet": "^5.2.1"
-  },
-  "devDependencies": {
-    "dotenv": "^5.0.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "postinstall": "netlify-lambda install",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+	"name": "gatsby-netlify-form-example",
+	"description": "Gatsby Netlify Form example",
+	"version": "1.0.0",
+	"author": "swyx <swyx@dontemail.me>",
+	"dependencies": {
+		"gatsby": "^2.13.35",
+		"gatsby-plugin-react-helmet": "^3.1.2",
+		"netlify-lambda": "^1.6.0",
+		"react": "^16.8.6",
+		"react-async-script": "^0.9.1",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1"
+	},
+	"devDependencies": {
+		"dotenv": "^5.0.1"
+	},
+	"keywords": [
+		"gatsby"
+	],
+	"license": "MIT",
+	"main": "n/a",
+	"scripts": {
+		"postinstall": "netlify-lambda install",
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
 }
