@@ -1,10 +1,17 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../layout";
+import Hero from "../components/hero";
+import About from "../components/about";
 export default function Index() {
+	if (typeof window !== "undefined") {
+		// Make scroll behavior of internal links smooth
+		require("smooth-scroll")('a[href*="#"]');
+	}
+
 	return (
 		<Layout>
-			<Link to="/contact/">Contact form</Link>
+			<Hero />
+			<About />
 		</Layout>
 	);
 }

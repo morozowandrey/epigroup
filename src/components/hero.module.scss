@@ -1,0 +1,46 @@
+@import "../styles/var.scss";
+@import "../styles/media-mixins.scss";
+
+.hero {
+	height: calc(100vh - 250px);
+	display: flex;
+	align-items: center;
+
+	&-title {
+		position: relative;
+		margin-bottom: 40px;
+
+		font-family: Lora;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 46px;
+		line-height: 66px;
+		letter-spacing: 2px;
+		color: $blue;
+
+		@include media-breakpoint-down(576) {
+			font-size: 27px;
+			line-height: 40px;
+			margin-bottom: 32px;
+		}
+	}
+
+	&-line {
+		position: absolute;
+		left: -48px;
+		top: -17px;
+
+		width: 367px;
+		height: 108px;
+
+		background-image: url("../../static/hero-title-line.svg");
+
+		@include media-breakpoint-down(576) {
+			width: 206px;
+			height: 60px;
+			left: -16px;
+			top: -6px;
+			background-size: cover;
+		}
+	}
+}

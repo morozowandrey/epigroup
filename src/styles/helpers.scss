@@ -1,0 +1,43 @@
+@import "../styles/media-mixins.scss";
+
+.flex {
+	display: flex;
+}
+
+.flex-beteen {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	max-width: 1440px;
+	padding: 0px 96px;
+
+	@include media-breakpoint-down(576) {
+		padding: 0px 32px;
+	}
+}

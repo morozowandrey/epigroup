@@ -1,0 +1,42 @@
+@import "../styles/var.scss";
+
+.header {
+	padding: 46px 0;
+	// background-color: #2a4771;
+
+	&-wrapper {
+		margin: 0 auto;
+		max-width: 1440px;
+		padding: 0px 96px;
+	}
+
+	&-logo {
+		margin: 0;
+	}
+
+	&-content {
+		&-nav {
+			&-item {
+				margin-right: 55px;
+				font-family: "Inter";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 26px;
+				color: $light-blue;
+				cursor: pointer;
+				text-decoration: none;
+
+				&:hover {
+					color: $blue;
+				}
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+		}
+		&-lan {
+		}
+	}
+}

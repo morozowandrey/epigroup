@@ -1,56 +1,25 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
-import "./css/typography.css";
-import "./css/styles.css";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 export default function Template({ children }) {
 	return (
 		<div>
-			<Helmet
-				title="EPI Group"
-				meta={[
-					{ name: "description", content: "EPI Group site" },
-					// { name: "keywords", content: "" },
-				]}
-			/>
-			<div
-				style={{
-					background: `rebeccapurple`,
-					marginBottom: `1.45rem`,
-				}}
-			>
-				<div
-					style={{
-						margin: `0 auto`,
-						maxWidth: 960,
-						padding: `1.45rem 1.0875rem`,
-					}}
-				>
-					<h1 style={{ margin: 0 }}>
-						<Link
-							to="/"
-							style={{
-								color: "white",
-								textDecoration: "none",
-							}}
-						>
-							EPI Group
-						</Link>
-					</h1>
-				</div>
-			</div>
-			<div
-				style={{
-					margin: `0 auto`,
-					maxWidth: 960,
-					padding: `0px 1.0875rem 1.45rem`,
-					paddingTop: 0,
-				}}
-			>
-				{children}
-			</div>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<meta name="description" content="EPI Group site"></meta>
+				<title>EPI Group</title>
+				<link
+					href="https://fonts.googleapis.com/css?family=Inter|Inter+Lora:400,500&display=swap"
+					rel="stylesheet"
+				></link>
+			</Helmet>
+
+			<Header />
+			<div>{children}</div>
+			<Footer />
 		</div>
 	);
 }

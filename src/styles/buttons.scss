@@ -1,0 +1,58 @@
+@import "../styles/var.scss";
+@import "../styles/media-mixins.scss";
+
+@mixin btn-reset {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+.cta-btn {
+	@include btn-reset;
+	position: relative;
+
+	padding-right: 33px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	text-decoration: none;
+
+	color: $blue;
+
+	&::after {
+		content: "";
+		width: 20px;
+		height: 14px;
+
+		margin-left: 15px;
+		display: inline-block;
+
+		background: url("../../static/cta-btn-arr_left.svg") right center/auto
+			100% no-repeat;
+		transition: width 0.2s ease-out;
+	}
+
+	&:hover {
+		color: $orange;
+
+		&::after {
+			width: 24px;
+		}
+	}
+
+	@include media-breakpoint-down(576) {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
