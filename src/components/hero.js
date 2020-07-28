@@ -10,7 +10,7 @@ export default function Hero() {
 			<div className={`wrapper`}>
 				<h1 className={styles.heroTitle}>
 					Мы знаем как добиться максимальной прибыли при проведении
-					взаимно успешных торговых сделок
+					успешных торговых сделок
 					<span className={styles.heroLine}></span>
 				</h1>
 				<CtaButton

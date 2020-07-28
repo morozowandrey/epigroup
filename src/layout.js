@@ -12,7 +12,7 @@ export default function Template({ children }) {
 				<meta name="description" content="EPI Group site"></meta>
 				<title>EPI Group</title>
 				<link
-					href="https://fonts.googleapis.com/css?family=Inter|Inter+Lora:400,500&display=swap"
+					href="https://fonts.googleapis.com/css?family=Inter|Lora:400,500&display=swap"
 					rel="stylesheet"
 				></link>
 			</Helmet>
