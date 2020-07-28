@@ -19,7 +19,7 @@ export default function Template({ children }) {
 
 			<Header />
 			<div>{children}</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

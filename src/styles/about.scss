@@ -39,10 +39,6 @@
         min-width: 516px;
         margin-right: 80px;
 
-        @include media-breakpoint-down(1280) {
-          margin-right: 80px;
-        }
-
         @include media-breakpoint-down(1024) {
           min-width: 440px;
         }

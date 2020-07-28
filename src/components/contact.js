@@ -1,6 +1,5 @@
 import React from "react";
 import { navigate } from "gatsby-link";
-import styles from "./contacts.module.scss";
 
 function encode(data) {
 	return Object.keys(data)
@@ -34,57 +33,101 @@ export default function Contact() {
 	};
 
 	return (
-		<div id="contacts" className={styles.contacts}>
-			<h1>Contact</h1>
-			<form
-				name="contact"
-				method="post"
-				action="/thanks/"
-				data-netlify="true"
-				data-netlify-honeypot="bot-field"
-				onSubmit={handleSubmit}
-			>
-				{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-				<input type="hidden" name="form-name" value="contact" />
-				<p hidden>
-					<label>
-						Don’t fill this out:{" "}
-						<input name="bot-field" onChange={handleChange} />
-					</label>
-				</p>
-				<p>
-					<label>
-						Your name:
-						<br />
-						<input
-							type="text"
-							name="name"
-							onChange={handleChange}
-						/>
-					</label>
-				</p>
-				<p>
-					<label>
-						Your email:
-						<br />
-						<input
-							type="email"
-							name="email"
-							onChange={handleChange}
-						/>
-					</label>
-				</p>
-				<p>
-					<label>
-						Message:
-						<br />
-						<textarea name="message" onChange={handleChange} />
-					</label>
-				</p>
-				<p>
-					<button type="submit">Send</button>
-				</p>
-			</form>
+		<div id="contacts" className="contact flex-center wrapper">
+			<div className="contact-content flex-between">
+				<div className="contact-content-box contact-content-box_1">
+					<h2 className="contact-content__title">
+						Отправьте нам запрос
+					</h2>
+					<p className="contact-content__subtitle contact-content__subtitle_1">
+						Хотите узнать больше про EPI group s.r.o.?
+					</p>
+					<p className="contact-content__subtitle contact-content__subtitle_2">
+						От услуг до подхода и людей — мы рады общению
+					</p>
+					<a className="contact__phone" href="tel:+44 60 9372 5690">
+						+44 60 9372 5690
+					</a>
+					<a className="contact__email" href="epigroup.cz@gmail.com">
+						epigroup.cz@gmail.com
+					</a>
+				</div>
+
+				<div className="contact-content-box contact-content-box_2">
+					<form
+						className="contact-form form flex-column"
+						name="contact"
+						method="post"
+						action="/thanks/"
+						data-netlify="true"
+						data-netlify-honeypot="bot-field"
+						onSubmit={handleSubmit}
+					>
+						{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+						<input type="hidden" name="form-name" value="contact" />
+						<p hidden>
+							<label>
+								Don’t fill this out:{" "}
+								<input
+									name="bot-field"
+									onChange={handleChange}
+								/>
+							</label>
+						</p>
+
+						<div className="contact-form-row contact-form-row_1 flex-between">
+							<div className="form-input-box contact-form-input-box contact-form-input-box_offset">
+								<input
+									type="text"
+									name="name"
+									onChange={handleChange}
+								/>
+								<label>Имя</label>
+							</div>
+							<div className="form-input-box contact-form-input-box">
+								<input
+									type="text"
+									name="company"
+									onChange={handleChange}
+								/>
+								<label>Компания</label>
+							</div>
+						</div>
+						<div className="contact-form-row contact-form-row_2 flex-between">
+							<div className="form-input-box contact-form-input-box contact-form-input-box_offset">
+								<input
+									type="email"
+									name="email"
+									onChange={handleChange}
+								/>
+								<label>Электронный адрес</label>
+							</div>
+							<div className="form-input-box contact-form-input-box">
+								<input
+									type="phone"
+									name="phone"
+									onChange={handleChange}
+								/>
+								<label>Телефон (необязательно)</label>
+							</div>
+						</div>
+						<div className="contact-form-row contact-form-row_3 flex-between">
+							<div className="form-input-box contact-form-input-box">
+								<textarea
+									name="message"
+									rows="1"
+									onChange={handleChange}
+								/>
+								<label>Сообщение</label>
+							</div>
+						</div>
+
+						<button className="cta-btn cta-btn_white" type="submit">
+							Отправить запрос
+						</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	);
 }

@@ -6,7 +6,7 @@ export default function About() {
 	const [state, setState] = React.useState({});
 
 	return (
-		<div id="about" className="about flex-center">
+		<div id="about" className="about flex-center wrapper">
 			<div className="about-content flex-between">
 				<div className="about-content-box-1">
 					<h2 className="about-content__title">
