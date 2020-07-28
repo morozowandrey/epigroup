@@ -9,7 +9,11 @@ export default function CtaButton(props) {
 		<AnchorLink
 			to={props.url}
 			title={props.text}
-			className="cta-btn"
+			className={
+				props.textColor === "white"
+					? `cta-btn cta-btn_white`
+					: `cta-btn cta-btn_blue`
+			}
 			stripHash
 		/>
 		// <button

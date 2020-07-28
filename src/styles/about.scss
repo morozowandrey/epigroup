@@ -1,0 +1,129 @@
+@import "../styles/var.scss";
+@import "../styles/media-mixins.scss";
+
+.about {
+  padding: 160px 96px;
+  background-color: $blue;
+
+  @include media-breakpoint-down(576) {
+    padding: 72px 32px;
+  }
+
+  &-content {
+    width: 100%;
+    align-items: flex-start;
+
+    @include media-breakpoint-down(812) {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+
+      font-family: Lora;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 56px;
+
+      color: #fff;
+
+      @include media-breakpoint-down(375) {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+
+    &-box {
+      &-1 {
+        min-width: 516px;
+        margin-right: 80px;
+
+        @include media-breakpoint-down(1280) {
+          margin-right: 80px;
+        }
+
+        @include media-breakpoint-down(1024) {
+          min-width: 440px;
+        }
+
+        @include media-breakpoint-down(576) {
+          min-width: unset;
+          margin-right: 0;
+        }
+      }
+      &-2 {
+        min-width: 592px;
+
+        @include media-breakpoint-down(1280) {
+          min-width: unset;
+        }
+      }
+    }
+
+    &__text {
+      margin-bottom: 40px;
+
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+
+      color: #fff;
+
+      &:last-of-type {
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(812) {
+          margin-bottom: 40px;
+        }
+      }
+
+      @include media-breakpoint-down(812) {
+        margin-bottom: 32px;
+      }
+
+      @include media-breakpoint-down(375) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      &_part {
+        color: $orange;
+        position: relative;
+
+        &::after {
+          content: "";
+
+          position: absolute;
+          left: -6px;
+          bottom: -6px;
+
+          width: 100%;
+          min-width: 259px;
+          height: 6px;
+
+          background: url("../../static/about-line.svg") no-repeat;
+
+          @include media-breakpoint-down(1280) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &-cta_desk {
+    @include media-breakpoint-down(812) {
+      display: none;
+    }
+  }
+
+  &-cta_mob {
+    display: none;
+    @include media-breakpoint-down(812) {
+      display: block;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 @import "../styles/var.scss";
+@import "../styles/media-mixins.scss";
 
 .about {
-	height: 100vh;
 	background-color: $blue;
 }

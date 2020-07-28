@@ -8,7 +8,7 @@ export default function Header() {
 
 	return (
 		<div className={styles.header}>
-			<div className="wrapper flex-beteen">
+			<div className="wrapper flex-between">
 				<Link
 					to="/"
 					style={{
@@ -24,7 +24,7 @@ export default function Header() {
 				</Link>
 
 				<div className={styles.headerContent}>
-					<div className={`${styles.headerContentNav} flex-beteen`}>
+					<div className={`${styles.headerContentNav} flex-between`}>
 						<AnchorLink
 							to="/"
 							title="Главная"

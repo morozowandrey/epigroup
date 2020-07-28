@@ -27,7 +27,12 @@
 	line-height: 26px;
 	text-decoration: none;
 
-	color: $blue;
+	&_white {
+		color: #fff;
+	}
+	&_blue {
+		color: $blue;
+	}
 
 	&::after {
 		content: "";
@@ -37,8 +42,7 @@
 		margin-left: 15px;
 		display: inline-block;
 
-		background: url("../../static/cta-btn-arr_left.svg") right center/auto
-			100% no-repeat;
+		background: url("../../static/cta-btn-arr_left.svg") right center/auto 100% no-repeat;
 		transition: width 0.2s ease-out;
 	}
 

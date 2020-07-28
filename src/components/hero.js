@@ -13,7 +13,11 @@ export default function Hero() {
 					взаимно успешных торговых сделок
 					<span className={styles.heroLine}></span>
 				</h1>
-				<CtaButton text="Отправить запрос" url="/#contacts"></CtaButton>
+				<CtaButton
+					text="Отправить запрос"
+					url="/#contacts"
+					textColor="blue"
+				></CtaButton>
 			</div>
 		</div>
 	);
