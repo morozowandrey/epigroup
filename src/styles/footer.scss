@@ -1,5 +1,30 @@
 @import "../styles/var.scss";
+@import "../styles/media-mixins.scss";
 
 .footer {
-  background-color: $blue;
+	background-color: $blue;
+	padding-bottom: 40px;
+
+	&__logo {
+		margin: 0;
+
+		@include media-breakpoint-down(375) {
+			width: 100px;
+		}
+	}
+	&-links {
+		&__policy {
+			font-family: Inter;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 26px;
+			color: rgba(255, 255, 255, 0.5);
+
+			@include media-breakpoint-down(375) {
+				font-size: 12px;
+				line-height: 26px;
+			}
+		}
+	}
 }

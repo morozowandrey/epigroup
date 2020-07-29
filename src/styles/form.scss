@@ -54,5 +54,12 @@
     textarea:focus {
       border-bottom: solid 2px $orange;
     }
+
+    input:not(:placeholder-shown) + label,
+    textarea:not(:placeholder-shown) + label {
+      top: -16px;
+      font-size: 14px;
+      color: #fff;
+    }
   }
 }

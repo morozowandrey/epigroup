@@ -28,7 +28,15 @@ export default function Contact() {
 				...state,
 			}),
 		})
-			.then(() => navigate(form.getAttribute("action")))
+			.then(() => {
+				document.getElementsByClassName(
+					"contact-form-success"
+				)[0].className += " visible";
+
+				document.getElementsByClassName(
+					"contact-form-submitbtn"
+				)[0].className += " hidden";
+			})
 			.catch((error) => alert(error));
 	};
 
@@ -48,7 +56,10 @@ export default function Contact() {
 					<a className="contact__phone" href="tel:+44 60 9372 5690">
 						+44 60 9372 5690
 					</a>
-					<a className="contact__email" href="epigroup.cz@gmail.com">
+					<a
+						className="contact__email"
+						href="mailto:epigroup.cz@gmail.com"
+					>
 						epigroup.cz@gmail.com
 					</a>
 				</div>
@@ -58,18 +69,24 @@ export default function Contact() {
 						className="contact-form form flex-column"
 						name="contact"
 						method="post"
-						action="/thanks/"
+						autoComplete="off"
 						data-netlify="true"
 						data-netlify-honeypot="bot-field"
 						onSubmit={handleSubmit}
 					>
 						{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-						<input type="hidden" name="form-name" value="contact" />
+						<input
+							type="hidden"
+							name="form-name"
+							value="contact"
+							placeholder=" "
+						/>
 						<p hidden>
 							<label>
 								Don’t fill this out:{" "}
 								<input
 									name="bot-field"
+									placeholder=" "
 									onChange={handleChange}
 								/>
 							</label>
@@ -80,6 +97,7 @@ export default function Contact() {
 								<input
 									type="text"
 									name="name"
+									placeholder=" "
 									onChange={handleChange}
 								/>
 								<label>Имя</label>
@@ -88,6 +106,7 @@ export default function Contact() {
 								<input
 									type="text"
 									name="company"
+									placeholder=" "
 									onChange={handleChange}
 								/>
 								<label>Компания</label>
@@ -98,6 +117,7 @@ export default function Contact() {
 								<input
 									type="email"
 									name="email"
+									placeholder=" "
 									onChange={handleChange}
 								/>
 								<label>Электронный адрес</label>
@@ -106,6 +126,7 @@ export default function Contact() {
 								<input
 									type="phone"
 									name="phone"
+									placeholder=" "
 									onChange={handleChange}
 								/>
 								<label>Телефон (необязательно)</label>
@@ -116,15 +137,20 @@ export default function Contact() {
 								<textarea
 									name="message"
 									rows="1"
+									placeholder=" "
 									onChange={handleChange}
 								/>
 								<label>Сообщение</label>
 							</div>
 						</div>
 
-						<button className="cta-btn cta-btn_white" type="submit">
+						<button
+							className="cta-btn cta-btn_white contact-form-submitbtn"
+							type="submit"
+						>
 							Отправить запрос
 						</button>
+						<p className="contact-form-success">Отправлено</p>
 					</form>
 				</div>
 			</div>
