@@ -1,0 +1,80 @@
+@import "../styles/var.scss";
+@import "../styles/buttons.scss";
+@import "../styles/media-mixins.scss";
+
+.header {
+	padding: 46px 0 0;
+
+	@include media-breakpoint-down(576) {
+		padding: 16px 0 0;
+	}
+
+	&-wrapper {
+		margin: 0 auto;
+		max-width: 1440px;
+		padding: 0px 96px;
+	}
+
+	&__logo {
+		margin: 0;
+
+		&_mob {
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	&-content {
+		&-nav {
+			@include media-breakpoint-down(812) {
+				display: none;
+			}
+
+			&-item {
+				margin-right: 55px;
+				font-family: "Inter";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 26px;
+				color: $light-blue;
+				cursor: pointer;
+				text-decoration: none;
+
+				&:hover {
+					color: $blue;
+				}
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+
+				&__mob {
+					margin-bottom: 0;
+					margin-right: 0;
+
+					font-family: Lora;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 26px;
+					line-height: 40px;
+
+					color: #fff;
+
+					&:hover {
+						color: #fff;
+					}
+
+					&-wrapper {
+						margin-bottom: 16px;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+		&-lan {
+		}
+	}
+}

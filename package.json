@@ -14,6 +14,7 @@
 		"node-sass": "^4.14.1",
 		"react": "^16.8.6",
 		"react-async-script": "^0.9.1",
+		"react-burger-menu": "^2.7.1",
 		"react-dom": "^16.8.6",
 		"react-helmet": "^5.2.1",
 		"smooth-scroll": "^16.1.3",

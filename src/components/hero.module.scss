@@ -2,9 +2,13 @@
 @import "../styles/media-mixins.scss";
 
 .hero {
-	height: calc(100vh - 250px);
 	display: flex;
 	align-items: center;
+	padding: 180px 0 180px;
+
+	@include media-breakpoint-down(812) {
+		padding: 140px 0 140px;
+	}
 
 	&-title {
 		position: relative;

@@ -1,13 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import styles from "./header.module.scss";
+import { slide as Menu } from "react-burger-menu";
 
 export default function Header() {
 	const [state, setState] = React.useState({});
 
+	const closeMenusOnClick = (e) => {
+		setState({ ...state, areMenusOpen: false });
+	};
+
+	const handleOnOpen = (e) => {
+		setState({ ...state, areMenusOpen: true });
+	};
+
 	return (
-		<div className={styles.header}>
+		<div className="header">
 			<div className="wrapper flex-between">
 				<Link
 					to="/"
@@ -19,32 +27,91 @@ export default function Header() {
 					<img
 						src="../../epi-group-logo.svg"
 						alt="EPI Group logo"
-						className={styles.headerLogo}
+						className="header__logo"
 					/>
 				</Link>
 
-				<div className={styles.headerContent}>
-					<div className={`${styles.headerContentNav} flex-between`}>
+				<div className="header-content">
+					<div className="header-content-nav flex-between">
 						<AnchorLink
 							to="/"
 							title="Главная"
-							className={styles.headerContentNavItem}
+							className="header-content-nav-item"
 							stripHash
 						/>
 						<AnchorLink
 							to="/#about"
 							title="О компании"
-							className={styles.headerContentNavItem}
+							className="header-content-nav-item"
 							stripHash
 						/>
 						<AnchorLink
 							to="/#contacts"
 							title="Контакты"
-							className={styles.headerContentNavItem}
+							className="header-content-nav-item"
 							stripHash
 						/>
 					</div>
-					<div className={styles.headerContentLan}></div>
+
+					<div id="outer-container">
+						<Menu
+							right
+							width={375}
+							outerContainerId={"outer-container"}
+							overlayClassName={"header-content-nav__overlay"}
+							isOpen={state.areMenusOpen}
+							onOpen={handleOnOpen}
+						>
+							<Link
+								to="/"
+								style={{
+									color: "white",
+									textDecoration: "none",
+								}}
+							>
+								<img
+									src="../../epi-group-logo_white.svg"
+									alt="EPI Group logo"
+									className="header__logo header__logo_mob"
+								/>
+							</Link>
+							<span
+								onClick={closeMenusOnClick}
+								className="header-content-nav-item__mob-wrapper"
+							>
+								<AnchorLink
+									to="/"
+									title="Главная"
+									className="header-content-nav-item header-content-nav-item__mob"
+									stripHash
+								/>
+							</span>
+							<span
+								onClick={closeMenusOnClick}
+								className="header-content-nav-item__mob-wrapper"
+							>
+								<AnchorLink
+									to="/#about"
+									title="О компании"
+									className="header-content-nav-item header-content-nav-item__mob"
+									stripHash
+								/>
+							</span>
+							<span
+								onClick={closeMenusOnClick}
+								className="header-content-nav-item__mob-wrapper"
+							>
+								<AnchorLink
+									to="/#contacts"
+									title="Контакты"
+									className="header-content-nav-item header-content-nav-item__mob"
+									stripHash
+								/>
+							</span>
+						</Menu>
+					</div>
+
+					<div className="header-content-lan"></div>
 				</div>
 			</div>
 		</div>
