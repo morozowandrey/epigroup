@@ -8,10 +8,15 @@ export default function Header() {
 
 	const closeMenusOnClick = (e) => {
 		setState({ ...state, areMenusOpen: false });
+		console.log(state.areMenusOpen);
 	};
 
 	const handleOnOpen = (e) => {
 		setState({ ...state, areMenusOpen: true });
+	};
+
+	const handleOnClose = (e) => {
+		setState({ ...state, areMenusOpen: false });
 	};
 
 	return (
@@ -61,6 +66,7 @@ export default function Header() {
 							overlayClassName={"header-content-nav__overlay"}
 							isOpen={state.areMenusOpen}
 							onOpen={handleOnOpen}
+							onClose={handleOnClose}
 						>
 							<Link
 								to="/"

@@ -3,63 +3,64 @@
 @import "../styles/media-mixins.scss";
 
 .form {
-  &-input-box {
-    flex: 1;
-    display: block;
-    position: relative;
-    margin-bottom: 24px;
+	&-input-box {
+		flex: 1;
+		display: block;
+		position: relative;
+		margin-bottom: 24px;
 
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px 0;
-      min-height: 48px;
+		input,
+		textarea {
+			width: 100%;
+			padding: 10px 0;
+			min-height: 48px;
 
-      background: none;
-      border: none;
-      border-bottom: solid 2px #fff;
-      color: #fff;
-      transition: all 0.2s ease-out 0s;
+			background: none;
+			border: none;
+			border-radius: unset;
+			border-bottom: solid 2px #fff;
+			color: #fff;
+			transition: all 0.2s ease-out 0s;
 
-      &:focus,
-      &:active {
-        outline: none;
-      }
-    }
+			&:focus,
+			&:active {
+				outline: none;
+			}
+		}
 
-    label {
-      position: absolute;
-      top: 16%;
-      left: 0;
+		label {
+			position: absolute;
+			top: 16%;
+			left: 0;
 
-      font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 32px;
-      color: #fff;
+			font-family: Inter;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 32px;
+			color: #fff;
 
-      pointer-events: none;
-      transition: all 0.15s ease-out 0s;
-    }
+			pointer-events: none;
+			transition: all 0.15s ease-out 0s;
+		}
 
-    textarea:focus + label,
-    input:focus + label {
-      top: -16px;
-      font-size: 14px;
-      color: #fff;
-    }
+		textarea:focus + label,
+		input:focus + label {
+			top: -16px;
+			font-size: 14px;
+			color: #fff;
+		}
 
-    input:focus,
-    textarea:focus {
-      border-bottom: solid 2px $orange;
-    }
+		input:focus,
+		textarea:focus {
+			border-bottom: solid 2px $orange;
+		}
 
-    input:not(:placeholder-shown) + label,
-    textarea:not(:placeholder-shown) + label {
-      top: -16px;
-      font-size: 14px;
-      color: #fff;
-    }
-  }
+		input:not(:placeholder-shown) + label,
+		textarea:not(:placeholder-shown) + label {
+			top: -16px;
+			font-size: 14px;
+			color: #fff;
+		}
+	}
 }
