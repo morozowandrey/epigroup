@@ -32,15 +32,15 @@ export default function Results() {
 								50+
 							</p>
 							<p className="results-content-item__desc">
-								Партеров и клиентов
+								Партнеров и клиентов
 							</p>
 						</div>
 						<div className="results-content-item results-content-item_last">
 							<p className="results-content-item__value results-content-item__value_4">
-								3
+								20+
 							</p>
 							<p className="results-content-item__desc">
-								Континента
+								Стран по всему миру
 							</p>
 						</div>
 					</div>
