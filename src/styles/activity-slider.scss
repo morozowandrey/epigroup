@@ -1,205 +1,314 @@
 @import "../styles/var.scss";
+@import "../styles/buttons.scss";
 @import "../styles/media-mixins.scss";
 
 .activity {
-  padding: 160px 0px;
-  background-color: $gray;
+	padding: 160px 0px;
+	background-color: $gray;
+	position: relative;
 
-  @include media-breakpoint-down(576) {
-    padding: 64px 0px;
-  }
+	@include media-breakpoint-down(576) {
+		padding: 64px 0px;
+	}
 
-  &-content {
-    width: 100%;
-    margin-bottom: 88px;
-    align-items: flex-start;
+	&-content {
+		width: 100%;
+		margin-bottom: 88px;
+		align-items: flex-start;
 
-    @include media-breakpoint-down(812) {
-      flex-direction: column;
-      margin-bottom: 40px;
-    }
+		@include media-breakpoint-down(812) {
+			flex-direction: column;
+			margin-bottom: 40px;
+		}
 
-    &-box {
-      &_1 {
-        min-width: 516px;
-        margin-right: 80px;
+		&-box {
+			&_1 {
+				min-width: 516px;
+				margin-right: 80px;
 
-        @include media-breakpoint-down(1024) {
-          min-width: 440px;
-        }
+				@include media-breakpoint-down(1024) {
+					min-width: 440px;
+				}
 
-        @include media-breakpoint-down(576) {
-          min-width: unset;
-          margin-right: 0;
-        }
-      }
-      &_2 {
-        min-width: 592px;
+				@include media-breakpoint-down(576) {
+					min-width: unset;
+					margin-right: 0;
+				}
+			}
+			&_2 {
+				min-width: 592px;
+				max-width: 592px;
 
-        @include media-breakpoint-down(1280) {
-          min-width: unset;
-        }
-      }
-    }
+				@include media-breakpoint-down(1280) {
+					min-width: unset;
+				}
+			}
+		}
 
-    &__title {
-      position: relative;
-      margin-bottom: 40px;
+		&__title {
+			position: relative;
+			margin-bottom: 40px;
 
-      font-family: Lora;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 40px;
-      line-height: 56px;
+			font-family: Lora;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 40px;
+			line-height: 56px;
 
-      color: $blue;
+			color: $blue;
 
-      &::after {
-        content: "";
+			&::after {
+				content: "";
 
-        position: absolute;
-        left: 0px;
-        bottom: -10px;
+				position: absolute;
+				left: 0px;
+				bottom: -10px;
 
-        width: 100%;
-        min-width: 398px;
-        height: 11px;
+				width: 100%;
+				min-width: 398px;
+				height: 11px;
 
-        background: url("../../static/activity-line.svg") no-repeat;
+				background: url("../../static/activity-line.svg") no-repeat;
 
-        @include media-breakpoint-down(1024) {
-          width: auto;
-          min-width: 360px;
-        }
+				@include media-breakpoint-down(1024) {
+					width: auto;
+					min-width: 360px;
+				}
 
-        @include media-breakpoint-down(812) {
-          display: block;
-        }
+				@include media-breakpoint-down(812) {
+					display: block;
+				}
 
-        @include media-breakpoint-down(375) {
-          min-width: 228px;
-          height: 7px;
-          background-size: contain;
-        }
-      }
+				@include media-breakpoint-down(375) {
+					min-width: 228px;
+					height: 7px;
+					background-size: contain;
+				}
+			}
 
-      @include media-breakpoint-down(1024) {
-        font-size: 36px;
-      }
+			@include media-breakpoint-down(1024) {
+				font-size: 36px;
+			}
 
-      @include media-breakpoint-down(375) {
-        font-size: 22px;
-        line-height: 32px;
-        margin-bottom: 24px;
-      }
-    }
+			@include media-breakpoint-down(375) {
+				font-size: 22px;
+				line-height: 32px;
+				margin-bottom: 24px;
+			}
+		}
 
-    &__text {
-      margin-bottom: 40px;
+		&__text {
+			margin-bottom: 40px;
 
-      font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 32px;
+			font-family: Inter;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 32px;
 
-      color: $blue;
+			color: $blue;
 
-      @include media-breakpoint-down(812) {
-        margin-bottom: 32px;
-      }
+			@include media-breakpoint-down(812) {
+				margin-bottom: 32px;
+			}
 
-      @include media-breakpoint-down(375) {
-        font-size: 16px;
-        line-height: 26px;
-      }
+			@include media-breakpoint-down(375) {
+				font-size: 16px;
+				line-height: 26px;
+			}
 
-      &_part {
-        color: $orange;
-        position: relative;
+			&_part {
+				color: $orange;
+				position: relative;
 
-        &::after {
-          content: "";
+				&::after {
+					content: "";
 
-          position: absolute;
-          left: -6px;
-          bottom: -6px;
+					position: absolute;
+					left: -6px;
+					bottom: -6px;
 
-          width: 100%;
-          min-width: 259px;
-          height: 6px;
+					width: 100%;
+					min-width: 259px;
+					height: 6px;
 
-          background: url("../../static/about-line.svg") no-repeat;
+					background: url("../../static/about-line.svg") no-repeat;
 
-          @include media-breakpoint-down(1280) {
-            display: none;
-          }
-        }
+					@include media-breakpoint-down(1280) {
+						display: none;
+					}
+				}
 
-        &::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-        }
+				&::before {
+					content: "";
+					position: absolute;
+					width: 100%;
+				}
 
-        &_1 {
-          &::before {
-            display: none;
+				&_1 {
+					&::before {
+						display: none;
 
-            left: -4px;
-            bottom: -4px;
-            width: 76px;
-            height: 4px;
+						left: -4px;
+						bottom: -4px;
+						width: 76px;
+						height: 4px;
 
-            background: url("../../static/about-line_mob_1.svg") no-repeat;
+						background: url("../../static/about-line_mob_1.svg")
+							no-repeat;
 
-            @include media-breakpoint-down(375) {
-              display: block;
-            }
-          }
-        }
+						@include media-breakpoint-down(375) {
+							display: block;
+						}
+					}
+				}
 
-        &_2 {
-          @include media-breakpoint-down(375) {
-            display: block;
-          }
+				&_2 {
+					@include media-breakpoint-down(375) {
+						display: block;
+					}
 
-          &::after {
-            display: none;
-          }
-          &::before {
-            display: none;
-            left: 0px;
-            bottom: -4px;
+					&::after {
+						display: none;
+					}
+					&::before {
+						display: none;
+						left: 0px;
+						bottom: -4px;
 
-            width: 143px;
-            height: 6px;
+						width: 143px;
+						height: 6px;
 
-            background: url("../../static/about-line_mob_2.svg") no-repeat;
-            @include media-breakpoint-down(375) {
-              display: block;
-            }
-          }
-        }
-      }
-    }
-  }
+						background: url("../../static/about-line_mob_2.svg")
+							no-repeat;
+						@include media-breakpoint-down(375) {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
 
-  &-slider {
-  }
+	&-slider {
+		overflow: hidden;
+		margin-bottom: 64px;
 
-  &-cta {
-    &_desk {
-      @include media-breakpoint-down(812) {
-        display: none;
-      }
-    }
+		@include media-breakpoint-down(576) {
+			margin-bottom: 32px;
+		}
 
-    &_mob {
-      display: none;
-      @include media-breakpoint-down(812) {
-        display: block;
-      }
-    }
-  }
+		&-wrapper {
+			position: relative;
+		}
+
+		&-item {
+			&-content {
+				padding: 90px 64px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				max-width: 592px;
+				min-height: 400px;
+
+				@include media-breakpoint-down(1024) {
+					max-width: unset;
+				}
+
+				@include media-breakpoint-down(576) {
+					display: flex;
+					justify-content: flex-end;
+					flex-direction: column;
+					padding: 32px;
+				}
+
+				@include media-breakpoint-down(375) {
+					min-height: unset;
+					height: 226px;
+				}
+			}
+
+			&__title {
+				margin-bottom: 24px;
+				font-family: Lora;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 26px;
+				color: #fff;
+
+				@include media-breakpoint-down(576) {
+					margin-bottom: 0;
+				}
+				@include media-breakpoint-down(375) {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+
+			&__text {
+				font-family: Inter;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 32px;
+				color: #fff;
+
+				@include media-breakpoint-down(576) {
+					display: none;
+				}
+			}
+		}
+
+		&-controls {
+			margin-right: 48px;
+
+			&-wrapper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			&__prev,
+			&__next {
+				@include btn-reset;
+
+				width: 24px;
+				height: 24px;
+
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+
+			&__prev {
+				margin-right: 16px;
+				background-image: url(../../static/slider-arrow-left.svg);
+			}
+
+			&__next {
+				background-image: url(../../static/slider-arrow-right.svg);
+			}
+
+			&-line {
+				flex: 1;
+				height: 1px;
+				overflow: hidden;
+
+				position: relative;
+				background-color: rgba(42, 71, 113, 0.2);
+
+				&__fill {
+					display: block;
+					width: 100%;
+					height: 1px;
+					background-color: $blue;
+					transform: translateX(-100%);
+				}
+			}
+		}
+	}
+
+	&-cta {
+	}
 }

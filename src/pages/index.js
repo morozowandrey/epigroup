@@ -13,11 +13,11 @@ export default function Index() {
 
 	return (
 		<Layout>
-			<Hero />
-			<About />
+			{/* <Hero />
+			<About /> */}
 			<ActivitySlider />
-			<Results />
-			<Contact />
+			{/* <Results />
+			<Contact /> */}
 		</Layout>
 	);
 }

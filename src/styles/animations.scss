@@ -1,0 +1,12 @@
+// SLIDER
+.sliderAnim {
+	animation: sliderAnim 1s cubic-bezier(0.85, 0.15, 0.15, 0.85) 0s 1;
+}
+@keyframes sliderAnim {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

@@ -8,6 +8,7 @@ import "./src/styles/buttons.scss";
 import "./src/styles/media-mixins.scss";
 import "./src/styles/form.scss";
 import "./src/styles/nav.scss";
+import "./src/styles/animations.scss";
 
 // sections
 import "./src/styles/header.scss";
