@@ -3,11 +3,11 @@
 @import "../styles/media-mixins.scss";
 
 .contact {
-  padding: 160px 96px;
+  padding: 160px 0px;
   background-color: $blue;
 
   @include media-breakpoint-down(812) {
-    padding: 72px 32px;
+    padding: 72px 0px;
   }
 
   &-content {

@@ -36,6 +36,7 @@
 .wrapper {
 	max-width: 1440px;
 	padding: 0px 96px;
+	margin: 0 auto;
 
 	@include media-breakpoint-down(576) {
 		padding: 0px 32px;
