@@ -51,6 +51,12 @@ export default function Header() {
 							stripHash
 						/>
 						<AnchorLink
+							to="/#activity"
+							title="Экспертиза"
+							className="header-content-nav-item"
+							stripHash
+						/>
+						<AnchorLink
 							to="/#contacts"
 							title="Контакты"
 							className="header-content-nav-item"
@@ -99,6 +105,17 @@ export default function Header() {
 								<AnchorLink
 									to="/#about"
 									title="О компании"
+									className="header-content-nav-item header-content-nav-item__mob"
+									stripHash
+								/>
+							</span>
+							<span
+								onClick={closeMenusOnClick}
+								className="header-content-nav-item__mob-wrapper"
+							>
+								<AnchorLink
+									to="/#activity"
+									title="Экспертиза"
 									className="header-content-nav-item header-content-nav-item__mob"
 									stripHash
 								/>
