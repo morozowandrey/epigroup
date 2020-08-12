@@ -203,6 +203,14 @@
 		}
 
 		&-item {
+			cursor: pointer;
+
+			&:hover {
+				.activity-slider-item__text {
+					opacity: 1;
+				}
+			}
+
 			&-content {
 				padding: 90px 64px;
 				background-repeat: no-repeat;
@@ -210,6 +218,7 @@
 				background-size: cover;
 				max-width: 592px;
 				min-height: 400px;
+				max-height: 400px;
 
 				@include media-breakpoint-down(1024) {
 					max-width: unset;
@@ -253,6 +262,8 @@
 				font-size: 18px;
 				line-height: 32px;
 				color: #fff;
+				opacity: 0;
+				transition: all 0.3s ease-out;
 
 				@include media-breakpoint-down(576) {
 					display: none;
@@ -303,7 +314,9 @@
 					width: 100%;
 					height: 1px;
 					background-color: $blue;
-					transform: translateX(-100%);
+					width: 0;
+					transition: width 0.3s ease-out;
+					// transform: translateX(-100%);
 				}
 			}
 		}

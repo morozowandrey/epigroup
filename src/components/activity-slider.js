@@ -11,17 +11,65 @@ import resoursesImg from "../../static/resourses-slide.jpg";
 export default function ActivitySlider() {
 	const [state, setState] = React.useState({});
 
-	const onTransitionStartAction = (e) => {
-		let el = document.getElementsByClassName(
+	const slidesRu = [
+		{
+			title: "Энергетика",
+			text:
+				"Наша команда имеет огромный опыт работы в разных сегментах энергетики, что позволяет нам понимать текущую ситуацию и тренды развития на рынках природного газа, нефти и угольной промышленности.",
+			img: energyImg,
+		},
+		{
+			title: "Полезные ископаемые и металлы",
+			text:
+				"За счет диверсификации в географическом отношении и стратегических связей в различных странах с нами вы будете иметь возможность принимать участие в ограниченных, специализированных поставках полезных ископаемых, металлов и производной продукции",
+			img: resoursesImg,
+		},
+		{
+			title: "Удобрения",
+			text:
+				"Наша компания предлагает широкий спектр удобрений для аграрной промышленности, который позволяет удовлетворить потребности клиентов в полном объеме.",
+			img: fertilizerImg,
+		},
+		{
+			title: "Aммиак",
+			text:
+				"Мы предлагаем аммиак исключительно сертифицированного качества от надежных поставщиков, который соответствует самым высоким мировым стандартам качества.",
+			img: ammoniaImg,
+		},
+	];
+
+	const setSliderLineWidth = (currConfig) => {
+		let progressBar = document.getElementsByClassName(
 			"activity-slider-controls-line__fill"
 		)[0];
-		el.className += " sliderAnim";
+		let nextSlide;
+
+		if (currConfig === true) {
+			nextSlide = window.innerWidth < 1280 ? 1 : settings.items;
+		} else if (currConfig.items == 2) {
+			nextSlide = currConfig.displayIndex + 1;
+		} else {
+			nextSlide = currConfig.displayIndex;
+		}
+
+		let slideLength = slidesRu.length;
+		let progressLength = (nextSlide / slideLength) * 100 + "%";
+		console.log("progressLength", progressLength, nextSlide / slideLength);
+		progressBar.style.width = progressLength;
+	};
+
+	const onTransitionStartAction = (e) => {
+		// let el = document.getElementsByClassName(
+		// 	"activity-slider-controls-line__fill"
+		// )[0];
+		// el.className += " sliderAnim";
 	};
 	const onTransitionEndAction = (e) => {
-		let el = document.getElementsByClassName(
-			"activity-slider-controls-line__fill"
-		)[0];
-		el.className = el.className.replace(/\bsliderAnim\b/, "");
+		setSliderLineWidth(e);
+		// progressBar.className = progressBar.className.replace(
+		// 	/\bsliderAnim\b/,
+		// 	""
+		// );
 	};
 
 	const settings = {
@@ -52,41 +100,8 @@ export default function ActivitySlider() {
 				center: true,
 				gutter: 0,
 			},
-			// 768: {
-			//   edgePadding: 120
-			// },
-			// 360: {
-			//   edgePadding: 0
-			// }
 		},
 	};
-
-	let slidesRu = [
-		{
-			title: "Энергетика",
-			text:
-				"Наша команда имеет огромный опыт работы в разных сегментах энергетики, что позволяет нам понимать текущую ситуацию и тренды развития на рынках природного газа, нефти и угольной промышленности.",
-			img: energyImg,
-		},
-		{
-			title: "Полезные ископаемые и металлы",
-			text:
-				"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod laudantium quae consequuntur voluptatum hic iste fugiat dolore vel accusamus ratione. Aspernatur assumenda ducimus autem!",
-			img: resoursesImg,
-		},
-		{
-			title: "Удобрения",
-			text:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihil sapiente, aut iure sed facilis eos optio incidunt labore, tenetur dolorum, nam fugiat molestias magnam hic.",
-			img: fertilizerImg,
-		},
-		{
-			title: "Aммиак",
-			text:
-				"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates sit facilis qui odio officia delectus laudantium beatae. Reprehenderit necessitatibus commodi sunt molestias",
-			img: ammoniaImg,
-		},
-	];
 
 	return (
 		<div id="activity" className="activity">
@@ -117,6 +132,7 @@ export default function ActivitySlider() {
 							settings={settings}
 							onTransitionStart={onTransitionStartAction}
 							onTransitionEnd={onTransitionEndAction}
+							onInit={setSliderLineWidth}
 						>
 							{slidesRu.map((el, index) => (
 								<div
