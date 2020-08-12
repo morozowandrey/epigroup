@@ -1,20 +1,25 @@
 import React from "react";
+import loadable from "@loadable/component";
+
 import Layout from "../layout";
 import Hero from "../components/hero";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Results from "../components/results";
-// import ActivitySlider from "../components/activity-slider";
-// import LoadableActivitySlider from "../components/activity-slider";
-// import TradeInvestments from "../components/trade-investments";
-import loadable from "@loadable/component";
-// This dynamic import will not be processed server-side
-const Other = loadable(() => import("../components/activity-slider"), {
-	ssr: false,
-});
-const Other2 = loadable(() => import("../components/trade-investments"), {
-	ssr: false,
-});
+
+// This dynamic imports will not be processed server-side
+const LoadableActivitySlider = loadable(
+	() => import("../components/activity-slider"),
+	{
+		ssr: false,
+	}
+);
+const LoadableTradeInvestments = loadable(
+	() => import("../components/trade-investments"),
+	{
+		ssr: false,
+	}
+);
 
 export default function Index() {
 	if (typeof window !== "undefined") {
@@ -26,12 +31,8 @@ export default function Index() {
 		<Layout>
 			<Hero />
 			<About />
-			{/* <ActivitySlider /> */}
-			<Other />
-			<Other2 />
-
-			{/* <LoadableActivitySlider /> */}
-			{/* <TradeInvestments /> */}
+			<LoadableActivitySlider />
+			<LoadableTradeInvestments />
 			<Results />
 			<Contact />
 		</Layout>
