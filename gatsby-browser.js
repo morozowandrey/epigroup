@@ -14,6 +14,7 @@ import "./src/styles/animations.scss";
 import "./src/styles/header.scss";
 import "./src/styles/about.scss";
 import "./src/styles/activity-slider.scss";
+import "./src/styles/trade-investments.scss";
 import "./src/styles/results.scss";
 import "./src/styles/contact.scss";
 import "./src/styles/footer.scss";

@@ -5,6 +5,7 @@ import About from "../components/about";
 import Contact from "../components/contact";
 import Results from "../components/results";
 import ActivitySlider from "../components/activity-slider";
+import TradeInvestments from "../components/trade-investments";
 export default function Index() {
 	if (typeof window !== "undefined") {
 		// Make scroll behavior of internal links smooth
@@ -13,11 +14,12 @@ export default function Index() {
 
 	return (
 		<Layout>
-			{/* <Hero />
-			<About /> */}
+			<Hero />
+			<About />
 			<ActivitySlider />
-			{/* <Results />
-			<Contact /> */}
+			<TradeInvestments />
+			<Results />
+			<Contact />
 		</Layout>
 	);
 }
