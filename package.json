@@ -4,6 +4,7 @@
 	"version": "1.0.0",
 	"author": "swyx <swyx@dontemail.me>",
 	"dependencies": {
+		"@loadable/component": "^5.13.1",
 		"babel-plugin-styled-components": "^1.10.7",
 		"gatsby": "^2.13.35",
 		"gatsby-plugin-anchor-links": "^1.1.1",
