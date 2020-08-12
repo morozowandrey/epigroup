@@ -31,7 +31,7 @@ export default function TradeInvestments() {
 		)[0];
 		let nextSlide;
 
-		if (currConfig === true) {
+		if (currConfig === true && typeof window !== `undefined`) {
 			nextSlide = window.innerWidth < 1280 ? 1 : settings.items;
 		} else if (currConfig.items == 2) {
 			nextSlide = currConfig.displayIndex + 1;
@@ -84,7 +84,8 @@ export default function TradeInvestments() {
 					</div>
 
 					<div className="investments-content-box investments-content-box_2">
-						{window.innerWidth > 769 ? (
+						{typeof window !== `undefined` &&
+						window.innerWidth > 769 ? (
 							<div className="">
 								<div className="investments-content-listbox">
 									<h3 className="investments-content-listbox__title">

@@ -44,7 +44,7 @@ export default function ActivitySlider() {
 		)[0];
 		let nextSlide;
 
-		if (currConfig === true) {
+		if (currConfig === true && typeof window !== `undefined`) {
 			nextSlide = window.innerWidth < 1280 ? 1 : settings.items;
 		} else if (currConfig.items == 2) {
 			nextSlide = currConfig.displayIndex + 1;
