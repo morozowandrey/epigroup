@@ -1,0 +1,107 @@
+{
+	"header": ["Home", "About", "Expertise", "Contacts"],
+	"hero": {
+		"title": "We know how to achieve the maximum profit during the successful commercial transactions",
+		"cta": "Send a request"
+	},
+	"about": {
+		"title": "EPI group — independent trading company",
+		"text-1": "We work openly, honestly, transparently, offering a reliable partnership to each customer. The main priority of our activity is.",
+		"text-2": "to each of our partners",
+		"text-3": "EPI group offers exclusively certified products from reliable suppliers that meet the highest international quality standards.",
+		"accent-text-1": "quality",
+		"accent-text-2": "and responsibility",
+		"cta": "More about us"
+	},
+	"activitieslider": {
+		"title": "Major domains",
+		"text": "Powerful scientific and technical base of the enterprise allows us to solve problems of any complexity",
+		"slides": [
+			{
+				"title": "Energetics",
+				"text": "Our team has extensive experience in various energy sectors, which allows us to understand the current situation and development trends in the natural gas, oil and coal markets.",
+				"img": "energyImg"
+			},
+			{
+				"title": "Minerals and metals",
+				"text": "By diversifying geographically and strategically linking in different countries with us, you will be able to participate in a limited, specialized supply of minerals, metals and derivatives.",
+				"img": "resoursesImg"
+			},
+			{
+				"title": "Fertilizers",
+				"text": "Our company offers a wide range of fertilizers for the agricultural industry, which allows us to meet the needs of our customers in full",
+				"img": "fertilizerImg"
+			},
+			{
+				"title": "Ammonia",
+				"text": "We offer ammonia of exclusively certified quality from reliable suppliers that meets the highest international quality standards.",
+				"img": "ammoniaImg"
+			}
+		],
+		"cta": "Send a request"
+	},
+	"tradeinvestments": {
+		"title": "Trade finance",
+		"text-1": "We help importing companies avoid 100% prepayment in settlements with suppliers and offer low-cost financing on short, medium and long-term basis.",
+		"slides": [
+			{
+				"title": "If you are an importer",
+				"arguments": [
+					"there is no need to withdraw current assets",
+					"access to low-cost funding",
+					"the opportunity to cooperate with suppliers on the most favorable terms and at the most favorable prices",
+					"no risks of non-shipment by the supplier of the goods when paying under the contract"
+				]
+			},
+			{
+				"title": "If you are an exporter",
+				"arguments": [
+					"guarantee of payment for the shipped goods",
+					"increase in the volume of supplies",
+					"expansion of the client base due to more favorable terms of delivery and payment"
+				]
+			}
+		],
+		"cta": "Send a request"
+	},
+	"results": {
+		"title": "Facts, numbers, results",
+		"year": {
+			"value": "2015",
+			"text": "EPI Group creation date"
+		},
+		"projects": {
+			"value": "40+",
+			"text": "Projects"
+		},
+		"clients": {
+			"value": "20+",
+			"text": "Clients"
+		},
+		"countries": {
+			"value": "15+",
+			"text": "Countries around the world"
+		}
+	},
+	"contact": {
+		"title": "Send us a request",
+		"text-1": "Want to know more about EPI group s.r.o.?",
+		"text-2": "From services to approach and people, we are happy to communicate with you.",
+		"tel": "+44 60 9372 5690",
+		"tellink": "tel:+44 60 9372 5690",
+		"email": "epigroup@example.com",
+		"emaillink": "mailto:epigroup.cz@gmail.com",
+		"cta": "Send a request",
+		"ctasent": "Sent",
+		"formplaceholders": {
+			"name": "Name",
+			"company": "Company",
+			"email": "E-mail",
+			"tel": "Phone (optional)",
+			"message": "Message"
+		}
+	},
+	"footer": {
+		"license": "© 2020 EPI GROUP s.r.o"
+	}
+}

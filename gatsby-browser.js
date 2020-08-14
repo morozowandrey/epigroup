@@ -5,6 +5,7 @@ import "./src/styles/typography.scss";
 // helpers
 import "./src/styles/helpers.scss";
 import "./src/styles/buttons.scss";
+import "./src/styles/language-menu.scss";
 import "./src/styles/media-mixins.scss";
 import "./src/styles/form.scss";
 import "./src/styles/nav.scss";

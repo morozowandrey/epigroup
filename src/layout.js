@@ -4,11 +4,13 @@ import { Helmet } from "react-helmet";
 import Footer from "./components/footer";
 import Header from "./components/header";
 
+import { withTrans } from "./i18n/withTrans";
+
 import favicon16 from "./images/epi-group-favicon-16.png";
 import favicon32 from "./images/epi-group-favicon-32.png";
 import favicon196 from "./images/epi-group-favicon-196.png";
 
-export default function Template({ children }) {
+const Layout = ({ children, t, i18n }) => {
 	return (
 		<div>
 			<Helmet>
@@ -39,9 +41,11 @@ export default function Template({ children }) {
 				></link>
 			</Helmet>
 
-			<Header />
+			{/* <Header /> */}
 			<div>{children}</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
-}
+};
+
+export default withTrans(Layout);

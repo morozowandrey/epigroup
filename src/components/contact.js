@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function encode(data) {
 	return Object.keys(data)
@@ -11,6 +12,7 @@ function encode(data) {
 
 export default function Contact() {
 	const [state, setState] = React.useState({});
+	const { t } = useTranslation();
 
 	const handleChange = (e) => {
 		setState({ ...state, [e.target.name]: e.target.value });
@@ -45,25 +47,25 @@ export default function Contact() {
 				<div className="contact-content flex-between">
 					<div className="contact-content-box contact-content-box_1">
 						<h2 className="contact-content__title">
-							Отправьте нам запрос
+							{t("contact.title")}
 						</h2>
 						<p className="contact-content__subtitle contact-content__subtitle_1">
-							Хотите узнать больше про EPI group s.r.o.?
+							{t("contact.text-1")}
 						</p>
 						<p className="contact-content__subtitle contact-content__subtitle_2">
-							От услуг до подхода и людей — мы рады общению
+							{t("contact.text-2")}
 						</p>
 						<a
 							className="contact__phone"
-							href="tel:+44 60 9372 5690"
+							href={t("contact.tellink")}
 						>
-							+44 60 9372 5690
+							{t("contact.tel")}
 						</a>
 						<a
 							className="contact__email"
-							href="mailto:epigroup.cz@gmail.com"
+							href={t("contact.emaillink")}
 						>
-							epigroup.cz@gmail.com
+							{t("contact.email")}
 						</a>
 					</div>
 
@@ -103,7 +105,9 @@ export default function Contact() {
 										placeholder=" "
 										onChange={handleChange}
 									/>
-									<label>Имя</label>
+									<label>
+										{t("contact.formplaceholders.name")}
+									</label>
 								</div>
 								<div className="form-input-box contact-form-input-box">
 									<input
@@ -112,7 +116,9 @@ export default function Contact() {
 										placeholder=" "
 										onChange={handleChange}
 									/>
-									<label>Компания</label>
+									<label>
+										{t("contact.formplaceholders.company")}
+									</label>
 								</div>
 							</div>
 							<div className="contact-form-row contact-form-row_2 flex-between">
@@ -123,7 +129,9 @@ export default function Contact() {
 										placeholder=" "
 										onChange={handleChange}
 									/>
-									<label>Электронный адрес</label>
+									<label>
+										{t("contact.formplaceholders.email")}
+									</label>
 								</div>
 								<div className="form-input-box contact-form-input-box">
 									<input
@@ -132,7 +140,9 @@ export default function Contact() {
 										placeholder=" "
 										onChange={handleChange}
 									/>
-									<label>Телефон (необязательно)</label>
+									<label>
+										{t("contact.formplaceholders.tel")}
+									</label>
 								</div>
 							</div>
 							<div className="contact-form-row contact-form-row_3 flex-between">
@@ -143,7 +153,9 @@ export default function Contact() {
 										placeholder=" "
 										onChange={handleChange}
 									/>
-									<label>Сообщение</label>
+									<label>
+										{t("contact.formplaceholders.message")}
+									</label>
 								</div>
 							</div>
 
@@ -151,9 +163,11 @@ export default function Contact() {
 								className="cta-btn cta-btn_white contact-form-submitbtn"
 								type="submit"
 							>
-								Отправить запрос
+								{t("contact.cta")}
 							</button>
-							<p className="contact-form-success">Отправлено</p>
+							<p className="contact-form-success">
+								{t("contact.ctasent")}
+							</p>
 						</form>
 					</div>
 				</div>

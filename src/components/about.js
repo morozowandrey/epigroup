@@ -1,8 +1,10 @@
 import React from "react";
 import CtaButton from "./cta.button";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
 	const [state, setState] = React.useState({});
+	const { t } = useTranslation();
 
 	return (
 		<div id="about" className="about flex-center">
@@ -10,12 +12,12 @@ export default function About() {
 				<div className="about-content flex-between">
 					<div className="about-content-box-1">
 						<h2 className="about-content__title">
-							EPI group — независимая трейдинговая компания
+							{t("about.title")}
 						</h2>
 
 						<span className="about-cta_desk">
 							<CtaButton
-								text="Узнать о нас больше"
+								text={t("about.cta")}
 								url="/#contacts"
 								textColor="white"
 							></CtaButton>
@@ -24,27 +26,22 @@ export default function About() {
 
 					<div className="about-content-box-2">
 						<p className="about-content__text">
-							Мы работаем открыто, честно, прозрачно, предлагая
-							надежное партнерство каждому заказчику. Главным
-							приоритетом нашей деятельности является{" "}
+							{t("about.text-1")}{" "}
 							<span className="about-content__text_part about-content__text_part_1">
-								качество
+								{t("about.accent-text-1")}
 							</span>{" "}
 							<span className="about-content__text_part about-content__text_part_2">
-								и ответственность
+								{t("about.accent-text-2")}
 							</span>{" "}
-							перед каждым нашим партнером.
+							{t("about.text-2")}
 						</p>
 						<p className="about-content__text">
-							EPI group предлагает исключительно сертифицированную
-							продукцию от надежных поставщиков, которая
-							соответствует самым высоким мировым стандартам
-							качества.
+							{t("about.text-3")}
 						</p>
 
 						<span className="about-cta_mob">
 							<CtaButton
-								text="Узнать о нас больше"
+								text={t("about.cta")}
 								url="/#contacts"
 								textColor="white"
 							></CtaButton>

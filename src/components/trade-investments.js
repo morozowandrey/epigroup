@@ -1,29 +1,13 @@
 import React from "react";
 import CtaButton from "./cta.button";
 import TinySlider from "tiny-slider-react";
+import { useTranslation } from "react-i18next";
 
 export default function TradeInvestments() {
 	const [state, setState] = React.useState({});
+	const { t } = useTranslation();
 
-	const slidesRu = [
-		{
-			title: "Если вы импортер",
-			bullets: [
-				"нет необходимости выводить оборотные средства",
-				"доступ к low-cost финансированию",
-				"возможность сотрудничать с поставщиками на наиболее выгодных условиях и по наиболее выгодным ценам",
-				"отсутствие рисков не отгрузки поставщиком товара при оплате по договору",
-			],
-		},
-		{
-			title: "Если вы экспортер",
-			bullets: [
-				"гарантия оплаты отгруженного товара",
-				"увеличение объема поставок",
-				"расширение клиентской базы за счет более выгодных условий доставки и оплаты",
-			],
-		},
-	];
+	const tradeInvestmentsSlides = t("tradeinvestments.slides");
 
 	const setSliderLineWidth = (currConfig) => {
 		let progressBar = document.getElementsByClassName(
@@ -39,7 +23,7 @@ export default function TradeInvestments() {
 			nextSlide = currConfig.displayIndex;
 		}
 
-		let slideLength = slidesRu.length;
+		let slideLength = tradeInvestmentsSlides.length;
 		let progressLength = (nextSlide / slideLength) * 100 + "%";
 		console.log("progressLength", progressLength, nextSlide / slideLength);
 		progressBar.style.width = progressLength;
@@ -71,12 +55,12 @@ export default function TradeInvestments() {
 				<div className="investments-content flex-between">
 					<div className="investments-content-box investments-content-box_1">
 						<h2 className="investments-content__title">
-							EPI group — независимая трейдинговая компания
+							{t("tradeinvestments.title")}
 						</h2>
 
 						<span className="investments-cta_desk">
 							<CtaButton
-								text="Узнать о нас больше"
+								text={t("tradeinvestments.cta")}
 								url="/#contacts"
 								textColor="white"
 							></CtaButton>
@@ -87,49 +71,28 @@ export default function TradeInvestments() {
 						{typeof window !== `undefined` &&
 						window.innerWidth > 769 ? (
 							<div className="">
-								<div className="investments-content-listbox">
-									<h3 className="investments-content-listbox__title">
-										Если вы импортер
-									</h3>
-									<ul className="investments-content-listbox-list">
-										<li className="investments-content-listbox-list__item">
-											нет необходимости выводить оборотные
-											средства
-										</li>
-										<li className="investments-content-listbox-list__item">
-											доступ к low-cost финансированию
-										</li>
-										<li className="investments-content-listbox-list__item">
-											возможность сотрудничать с
-											поставщиками на наиболее выгодных
-											условиях и по наиболее выгодным
-											ценам
-										</li>
-										<li className="investments-content-listbox-list__item">
-											отсутствие рисков не отгрузки
-											поставщиком товара при оплате по
-											договору
-										</li>
-									</ul>
-								</div>
-								<div className="investments-content-listbox">
-									<h3 className="investments-content-listbox__title">
-										Если вы экспортер
-									</h3>
-									<ul className="investments-content-listbox-list">
-										<li className="investments-content-listbox-list__item">
-											гарантия оплаты отгруженного товара
-										</li>
-										<li className="investments-content-listbox-list__item">
-											увеличение объема поставок
-										</li>
-										<li className="investments-content-listbox-list__item">
-											расширение клиентской базы за счет
-											более выгодных условий доставки и
-											оплаты
-										</li>
-									</ul>
-								</div>
+								{tradeInvestmentsSlides.map((node, index1) => (
+									<div
+										key={index1}
+										className="investments-content-listbox"
+									>
+										<h3 className="investments-content-listbox__title">
+											{node.title}
+										</h3>
+										<ul className="investments-content-listbox-list">
+											{node.arguments.map(
+												(argument, index2) => (
+													<li
+														key={index2}
+														className="investments-content-listbox-list__item"
+													>
+														{argument}
+													</li>
+												)
+											)}
+										</ul>
+									</div>
+								))}
 							</div>
 						) : (
 							<div className="investments-slider-wrapper">
@@ -139,34 +102,40 @@ export default function TradeInvestments() {
 										onTransitionEnd={onTransitionEndAction}
 										onInit={setSliderLineWidth}
 									>
-										{slidesRu.map((el, index) => (
-											<div
-												key={index}
-												className="investments-slider-item"
-											>
-												<div className="investments-content-listbox">
-													<h3 className="investments-content-listbox__title">
-														{el.title}
-													</h3>
+										{tradeInvestmentsSlides.map(
+											(el, index) => (
+												<div
+													key={index}
+													className="investments-slider-item"
+												>
+													<div className="investments-content-listbox">
+														<h3 className="investments-content-listbox__title">
+															{el.title}
+														</h3>
 
-													<ul className="investments-content-listbox-list">
-														{el.bullets.map(
-															(
-																bullet,
-																index2
-															) => (
-																<li
-																	key={index2}
-																	className="investments-content-listbox-list__item"
-																>
-																	{bullet}
-																</li>
-															)
-														)}
-													</ul>
+														<ul className="investments-content-listbox-list">
+															{el.arguments.map(
+																(
+																	argument,
+																	index2
+																) => (
+																	<li
+																		key={
+																			index2
+																		}
+																		className="investments-content-listbox-list__item"
+																	>
+																		{
+																			argument
+																		}
+																	</li>
+																)
+															)}
+														</ul>
+													</div>
 												</div>
-											</div>
-										))}
+											)
+										)}
 									</TinySlider>
 								</div>
 								<div className="investments-slider-controls-wrapper">

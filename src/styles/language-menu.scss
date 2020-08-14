@@ -1,0 +1,23 @@
+@import "../styles/var.scss";
+@import "../styles/buttons.scss";
+@import "../styles/media-mixins.scss";
+
+.language-menu {
+	&__item {
+		@include btn-reset;
+		margin-right: 24px;
+		font-family: Inter;
+		font-size: 16px;
+		line-height: 26px;
+		color: rgba(255, 255, 255, 0.4);
+		cursor: pointer;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}

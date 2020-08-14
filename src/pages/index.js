@@ -6,6 +6,8 @@ import Hero from "../components/hero";
 import About from "../components/about";
 import Contact from "../components/contact";
 import Results from "../components/results";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 // This dynamic imports will not be processed server-side
 const LoadableActivitySlider = loadable(
@@ -29,12 +31,14 @@ export default function Index() {
 
 	return (
 		<Layout>
+			<Header />
 			<Hero />
 			<About />
 			<LoadableActivitySlider />
 			<LoadableTradeInvestments />
 			<Results />
 			<Contact />
+			<Footer />
 		</Layout>
 	);
 }

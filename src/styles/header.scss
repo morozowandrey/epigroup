@@ -75,6 +75,11 @@
 			}
 		}
 		&-lan {
+			position: absolute;
+			bottom: 0;
+			&:focus {
+				outline: none;
+			}
 		}
 	}
 }

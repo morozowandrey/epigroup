@@ -7,13 +7,13 @@
 	width: 36px;
 	height: 30px;
 	right: 96px;
-	top: 46px;
+	top: 60px;
 
-	display: none;
+	// display: none;
 
-	@include media-breakpoint-down(812) {
-		display: block;
-	}
+	// @include media-breakpoint-down(812) {
+	// 	display: block;
+	// }
 
 	@include media-breakpoint-down(576) {
 		right: 32px;

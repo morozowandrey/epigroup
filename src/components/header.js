@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { slide as Menu } from "react-burger-menu";
+import LanguageMenu from "./language-menu";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
 	const [state, setState] = React.useState({});
+	const { t } = useTranslation();
 
 	const closeMenusOnClick = (e) => {
 		setState({ ...state, areMenusOpen: false });
-		console.log(state.areMenusOpen);
+		// console.log(state.areMenusOpen);
 	};
 
 	const handleOnOpen = (e) => {
@@ -37,32 +40,32 @@ export default function Header() {
 				</Link>
 
 				<div className="header-content">
-					<div className="header-content-nav flex-between">
+					{/* <div className="header-content-nav flex-between">
 						<AnchorLink
 							to="/"
-							title="Главная"
+							title={t("header")[0]}
 							className="header-content-nav-item"
 							stripHash
 						/>
 						<AnchorLink
 							to="/#about"
-							title="О компании"
+							title={t("header")[1]}
 							className="header-content-nav-item"
 							stripHash
 						/>
 						<AnchorLink
 							to="/#activity"
-							title="Экспертиза"
+							title={t("header")[2]}
 							className="header-content-nav-item"
 							stripHash
 						/>
 						<AnchorLink
 							to="/#contacts"
-							title="Контакты"
+							title={t("header")[3]}
 							className="header-content-nav-item"
 							stripHash
 						/>
-					</div>
+					</div> */}
 
 					<div id="outer-container">
 						<Menu
@@ -93,7 +96,7 @@ export default function Header() {
 							>
 								<AnchorLink
 									to="/"
-									title="Главная"
+									title={t("header")[0]}
 									className="header-content-nav-item header-content-nav-item__mob"
 									stripHash
 								/>
@@ -104,7 +107,7 @@ export default function Header() {
 							>
 								<AnchorLink
 									to="/#about"
-									title="О компании"
+									title={t("header")[1]}
 									className="header-content-nav-item header-content-nav-item__mob"
 									stripHash
 								/>
@@ -115,7 +118,7 @@ export default function Header() {
 							>
 								<AnchorLink
 									to="/#activity"
-									title="Экспертиза"
+									title={t("header")[2]}
 									className="header-content-nav-item header-content-nav-item__mob"
 									stripHash
 								/>
@@ -126,15 +129,17 @@ export default function Header() {
 							>
 								<AnchorLink
 									to="/#contacts"
-									title="Контакты"
+									title={t("header")[3]}
 									className="header-content-nav-item header-content-nav-item__mob"
 									stripHash
 								/>
 							</span>
+
+							<div className="header-content-lan">
+								<LanguageMenu></LanguageMenu>
+							</div>
 						</Menu>
 					</div>
-
-					<div className="header-content-lan"></div>
 				</div>
 			</div>
 		</div>

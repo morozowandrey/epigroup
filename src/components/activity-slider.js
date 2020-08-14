@@ -1,6 +1,7 @@
 import React from "react";
 import CtaButton from "./cta.button";
 import TinySlider from "tiny-slider-react";
+import { useTranslation } from "react-i18next";
 
 // slider images
 import ammoniaImg from "../../static/ammonia-slide.jpg";
@@ -10,32 +11,16 @@ import resoursesImg from "../../static/resourses-slide.jpg";
 
 export default function ActivitySlider() {
 	const [state, setState] = React.useState({});
-	const slidesRu = [
-		{
-			title: "Энергетика",
-			text:
-				"Наша команда имеет огромный опыт работы в разных сегментах энергетики, что позволяет нам понимать текущую ситуацию и тренды развития на рынках природного газа, нефти и угольной промышленности.",
-			img: energyImg,
-		},
-		{
-			title: "Полезные ископаемые и металлы",
-			text:
-				"За счет диверсификации в географическом отношении и стратегических связей в различных странах с нами вы будете иметь возможность принимать участие в ограниченных, специализированных поставках полезных ископаемых, металлов и производной продукции",
-			img: resoursesImg,
-		},
-		{
-			title: "Удобрения",
-			text:
-				"Наша компания предлагает широкий спектр удобрений для аграрной промышленности, который позволяет удовлетворить потребности клиентов в полном объеме.",
-			img: fertilizerImg,
-		},
-		{
-			title: "Aммиак",
-			text:
-				"Мы предлагаем аммиак исключительно сертифицированного качества от надежных поставщиков, который соответствует самым высоким мировым стандартам качества.",
-			img: ammoniaImg,
-		},
+	const { t } = useTranslation();
+
+	const activitiesSlides = t("activitieslider.slides");
+	const activitiesSlidesImages = [
+		energyImg,
+		resoursesImg,
+		fertilizerImg,
+		ammoniaImg,
 	];
+
 	const setSliderLineWidth = (currConfig) => {
 		let progressBar = document.getElementsByClassName(
 			"activity-slider-controls-line__fill"
@@ -50,7 +35,7 @@ export default function ActivitySlider() {
 			nextSlide = currConfig.displayIndex;
 		}
 
-		let slideLength = slidesRu.length;
+		let slideLength = activitiesSlides.length;
 		let progressLength = (nextSlide / slideLength) * 100 + "%";
 		console.log("progressLength", progressLength, nextSlide / slideLength);
 		progressBar.style.width = progressLength;
@@ -105,17 +90,16 @@ export default function ActivitySlider() {
 				<div className="activity-content flex-between">
 					<div className="activity-content-box activity-content-box_1">
 						<h2 className="activity-content__title">
-							Основные направления <br /> сферы деятельности
+							{t("activitieslider.title")}
 						</h2>
 					</div>
 					<div className="activity-content-box activity-content-box_2">
 						<p className="activity-content__text">
-							Мощная научно-техническая база предприятия позволяет
-							нам решать задачи любой сложности
+							{t("activitieslider.text")}
 						</p>
 						<span className="activity-cta">
 							<CtaButton
-								text="Отправить запрос"
+								text={t("activitieslider.cta")}
 								url="/#contacts"
 								textColor="blue"
 							></CtaButton>
@@ -130,7 +114,7 @@ export default function ActivitySlider() {
 							onTransitionEnd={onTransitionEndAction}
 							onInit={setSliderLineWidth}
 						>
-							{slidesRu.map((el, index) => (
+							{activitiesSlides.map((el, index) => (
 								<div
 									key={index}
 									className="activity-slider-item"
@@ -138,7 +122,7 @@ export default function ActivitySlider() {
 									<div
 										className="activity-slider-item-content"
 										style={{
-											backgroundImage: `url(${el.img})`,
+											backgroundImage: `url(${activitiesSlidesImages[index]})`,
 										}}
 									>
 										<p className="activity-slider-item__title">

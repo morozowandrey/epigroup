@@ -1,46 +1,48 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Results() {
 	const [state, setState] = React.useState({});
+	const { t } = useTranslation();
 
 	return (
 		<div id="results" className="results">
 			<div className="wrapper">
-				<h2 className="results__title">Факты, цифры, результаты</h2>
+				<h2 className="results__title">{t("results.title")}</h2>
 				<div className="results-content">
 					<div className="results-content-box results-content-box_1">
 						<div className="results-content-item">
 							<p className="results-content-item__value results-content-item__value_1">
-								15+
+								{t("results.year.value")}
 							</p>
 							<p className="results-content-item__desc">
-								Лет на рынке
+								{t("results.year.text")}
 							</p>
 						</div>
 						<div className="results-content-item">
 							<p className="results-content-item__value results-content-item__value_2">
-								100+
+								{t("results.projects.value")}
 							</p>
 							<p className="results-content-item__desc">
-								Успешных проектов
+								{t("results.year.text")}
 							</p>
 						</div>
 					</div>
 					<div className="results-content-box results-content-box_2">
 						<div className="results-content-item">
 							<p className="results-content-item__value results-content-item__value_3">
-								50+
+								{t("results.clients.value")}
 							</p>
 							<p className="results-content-item__desc">
-								Партнеров и клиентов
+								{t("results.clients.text")}
 							</p>
 						</div>
 						<div className="results-content-item results-content-item_last">
 							<p className="results-content-item__value results-content-item__value_4">
-								20+
+								{t("results.countries.value")}
 							</p>
 							<p className="results-content-item__desc">
-								Стран по всему миру
+								{t("results.countries.text")}
 							</p>
 						</div>
 					</div>
