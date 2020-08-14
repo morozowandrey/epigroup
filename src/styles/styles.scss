@@ -122,6 +122,9 @@ button,
 select {
 	text-transform: none;
 }
+button {
+	outline: none;
+}
 [type="reset"],
 [type="submit"],
 button,

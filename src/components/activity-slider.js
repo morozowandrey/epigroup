@@ -11,7 +11,8 @@ import resoursesImg from "../../static/resourses-slide.jpg";
 
 export default function ActivitySlider() {
 	const [state, setState] = React.useState({});
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	let ln = i18n.language ? i18n.language : i18n.languages[1];
 
 	const activitiesSlides = t("activitieslider.slides");
 	const activitiesSlidesImages = [
@@ -20,7 +21,6 @@ export default function ActivitySlider() {
 		fertilizerImg,
 		ammoniaImg,
 	];
-
 	const setSliderLineWidth = (currConfig) => {
 		let progressBar = document.getElementsByClassName(
 			"activity-slider-controls-line__fill"
@@ -89,8 +89,15 @@ export default function ActivitySlider() {
 			<div className="wrapper">
 				<div className="activity-content flex-between">
 					<div className="activity-content-box activity-content-box_1">
-						<h2 className="activity-content__title">
-							{t("activitieslider.title")}
+						<h2
+							className={
+								ln === "en"
+									? "activity-content__title activity-content__title_en"
+									: "activity-content__title"
+							}
+						>
+							{t("activitieslider.title-1")} <br />{" "}
+							{t("activitieslider.title-2")}
 						</h2>
 					</div>
 					<div className="activity-content-box activity-content-box_2">

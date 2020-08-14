@@ -2,127 +2,145 @@
 @import "../styles/media-mixins.scss";
 
 .results {
-  padding: 160px 0;
+	padding: 160px 0;
 
-  @include media-breakpoint-down(812) {
-    padding: 64px 0;
-  }
+	@include media-breakpoint-down(812) {
+		padding: 64px 0;
+	}
 
-  &__title {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 72px;
+	&__title {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 72px;
 
-    font-family: Lora;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 56px;
+		font-family: Lora;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 56px;
 
-    color: $blue;
+		color: $blue;
 
-    @include media-breakpoint-down(812) {
-      margin-bottom: 48px;
-      font-size: 22px;
-      line-height: 32px;
-    }
+		@include media-breakpoint-down(812) {
+			margin-bottom: 48px;
+			font-size: 22px;
+			line-height: 32px;
+		}
 
-    &::after {
-      content: "";
+		&::after {
+			content: "";
 
-      position: absolute;
-      right: -10px;
-      bottom: -8px;
+			position: absolute;
+			right: -10px;
+			bottom: -8px;
 
-      min-width: 252px;
-      height: 38px;
+			min-width: 252px;
+			height: 38px;
 
-      background: url("../../static/results-title-line.svg") no-repeat;
+			background: url("../../static/results-title-line.svg") no-repeat;
 
-      @include media-breakpoint-down(812) {
-        min-width: 138px;
-        height: 26px;
-        background-size: contain;
-      }
-    }
-  }
+			@include media-breakpoint-down(812) {
+				min-width: 138px;
+				height: 26px;
+				background-size: contain;
+			}
+		}
 
-  &-content {
-    display: flex;
+		&_en {
+			&::after {
+				bottom: -6px;
+				min-width: 154px;
 
-    @include media-breakpoint-down(812) {
-      flex-direction: column;
-    }
+				background: url("../../static/results-title-line_en.svg")
+					no-repeat;
 
-    &-box {
-      flex: 1;
+				@include media-breakpoint-down(812) {
+					min-width: 80px;
+					height: 22px;
+					bottom: -5px;
+					right: -6px;
+					background-size: contain;
+				}
+			}
+		}
+	}
 
-      &_1 {
-      }
-      &_2 {
-      }
-    }
+	&-content {
+		display: flex;
 
-    &-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 36px;
+		@include media-breakpoint-down(812) {
+			flex-direction: column;
+		}
 
-      @include media-breakpoint-down(812) {
-        margin-bottom: 24px;
-      }
+		&-box {
+			flex: 1;
 
-      &_last {
-        @include media-breakpoint-down(812) {
-          margin-bottom: 0;
-        }
-      }
+			&_1 {
+			}
+			&_2 {
+			}
+		}
 
-      &__value {
-        width: 90px;
-        margin-right: 48px;
+		&-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 36px;
 
-        font-family: Lora;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 40px;
-        line-height: 56px;
-        color: $blue;
+			@include media-breakpoint-down(812) {
+				margin-bottom: 24px;
+			}
 
-        @include media-breakpoint-down(812) {
-          width: 50px;
-          margin-right: 24px;
-          font-size: 22px;
-          line-height: 32px;
-        }
+			&_last {
+				@include media-breakpoint-down(812) {
+					margin-bottom: 0;
+				}
+			}
 
-        &_1 {
-        }
-        &_2 {
-        }
-        &_3,
-        &_4 {
-          width: 70px;
+			&__value {
+				width: 90px;
+				margin-right: 48px;
 
-          @include media-breakpoint-down(812) {
-            width: 50px;
-          }
-        }
-      }
+				font-family: Lora;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 40px;
+				line-height: 56px;
+				color: $blue;
 
-      &__desc {
-        font-family: Inter;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-        color: $blue;
+				@include media-breakpoint-down(812) {
+					width: 50px;
+					margin-right: 24px;
+					font-size: 22px;
+					line-height: 32px;
+				}
 
-        @include media-breakpoint-down(812) {
-          font-size: 16px;
-          line-height: 26px;
-        }
-      }
-    }
-  }
+				&_1 {
+				}
+				&_2 {
+				}
+				&_3,
+				&_4 {
+					width: 70px;
+
+					@include media-breakpoint-down(812) {
+						width: 50px;
+					}
+				}
+			}
+
+			&__desc {
+				font-family: Inter;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 32px;
+				color: $blue;
+
+				@include media-breakpoint-down(812) {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+	}
 }

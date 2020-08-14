@@ -14,7 +14,8 @@
 		"cta": "More about us"
 	},
 	"activitieslider": {
-		"title": "Major domains",
+		"title-1": "Major domains",
+		"title-2": "",
 		"text": "Powerful scientific and technical base of the enterprise allows us to solve problems of any complexity",
 		"slides": [
 			{

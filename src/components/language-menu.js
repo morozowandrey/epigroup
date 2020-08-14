@@ -10,8 +10,6 @@ const LanguageMenu = (props) => {
 		active: "en",
 	});
 
-	console.log(state.active);
-
 	function handleChange(lang) {
 		i18n.changeLanguage(lang);
 		setState({ active: lang });

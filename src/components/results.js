@@ -3,12 +3,21 @@ import { useTranslation } from "react-i18next";
 
 export default function Results() {
 	const [state, setState] = React.useState({});
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	let ln = i18n.language ? i18n.language : i18n.languages[1];
 
 	return (
 		<div id="results" className="results">
 			<div className="wrapper">
-				<h2 className="results__title">{t("results.title")}</h2>
+				<h2
+					className={
+						ln === "en"
+							? "results__title results__title_en"
+							: "results__title"
+					}
+				>
+					{t("results.title")}
+				</h2>
 				<div className="results-content">
 					<div className="results-content-box results-content-box_1">
 						<div className="results-content-item">

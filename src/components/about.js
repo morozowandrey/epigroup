@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 
 export default function About() {
 	const [state, setState] = React.useState({});
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	let ln = i18n.language ? i18n.language : i18n.languages[1];
 
 	return (
 		<div id="about" className="about flex-center">
@@ -27,10 +28,22 @@ export default function About() {
 					<div className="about-content-box-2">
 						<p className="about-content__text">
 							{t("about.text-1")}{" "}
-							<span className="about-content__text_part about-content__text_part_1">
+							<span
+								className={
+									ln === "en"
+										? "about-content__text_part about-content__text_part_1 about-content__text_part_en"
+										: "about-content__text_part about-content__text_part_1"
+								}
+							>
 								{t("about.accent-text-1")}
 							</span>{" "}
-							<span className="about-content__text_part about-content__text_part_2">
+							<span
+								className={
+									ln === "en"
+										? "about-content__text_part about-content__text_part_2 about-content__text_part_en"
+										: "about-content__text_part about-content__text_part_2"
+								}
+							>
 								{t("about.accent-text-2")}
 							</span>{" "}
 							{t("about.text-2")}
