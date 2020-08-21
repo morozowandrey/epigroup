@@ -10,15 +10,11 @@ export default function Hero() {
 	let ln = i18n.language ? i18n.language : i18n.languages[1];
 
 	return (
-		<div id="hero" className={`${styles.hero}`}>
-			<div className={`wrapper`}>
-				<h1 className={styles.heroTitle}>
+		<div id="hero" className="hero">
+			<div className="wrapper">
+				<h1 className="hero__title">
 					{t("hero.title")}
-					<span
-						className={
-							ln === "en" ? styles.heroLineEn : styles.heroLine
-						}
-					></span>
+					<span className="hero__line"></span>
 				</h1>
 				<CtaButton
 					text={t("hero.cta")}

@@ -3,7 +3,7 @@
 @import "../styles/media-mixins.scss";
 
 .header {
-	padding: 46px 0 0;
+	padding: 32px 0 0;
 
 	@include media-breakpoint-down(576) {
 		padding: 16px 0 0;

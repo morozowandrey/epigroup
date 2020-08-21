@@ -43,13 +43,12 @@
 	},
 	"tradeinvestments": {
 		"title": "Trade finance",
-		"text-1": "We help importing companies avoid 100% prepayment in settlements with suppliers and offer low-cost financing on short, medium and long-term basis.",
+		"text-1": "We help importing companies avoid 100% prepayment in settlements with suppliers and offer financing on short, medium and long-term basis.",
 		"slides": [
 			{
 				"title": "If you are an importer",
 				"arguments": [
 					"there is no need to withdraw current assets",
-					"access to low-cost funding",
 					"the opportunity to cooperate with suppliers on the most favorable terms and at the most favorable prices",
 					"no risks of non-shipment by the supplier of the goods when paying under the contract"
 				]
