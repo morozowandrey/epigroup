@@ -67,19 +67,19 @@
 	"results": {
 		"title": "Facts, numbers, results",
 		"year": {
-			"value": "2015",
-			"text": "EPI Group creation date"
+			"value": "15+",
+			"text": "Years of experience"
 		},
 		"projects": {
-			"value": "40+",
+			"value": "100+",
 			"text": "Projects"
 		},
 		"clients": {
-			"value": "20+",
-			"text": "Clients"
+			"value": "50+",
+			"text": "Partners and clients"
 		},
 		"countries": {
-			"value": "15+",
+			"value": "20+",
 			"text": "Countries around the world"
 		}
 	},
@@ -103,5 +103,109 @@
 	},
 	"footer": {
 		"license": "© 2020 EPI GROUP s.r.o"
+	},
+	"resoursesPage": {
+		"title": "Minerals and metals",
+		"content": {
+			"title": "Minerals and metals",
+			"subtitle": "",
+			"text": "By diversifying geographically and strategically linking in different countries with us, you will be able to participate in a limited, specialized supply of minerals, metals and derivatives.",
+			"list": ["", "", ""]
+		},
+		"blocks": [
+			[
+				[
+					"Rutile concentrate",
+					"Ilmenite concentrate",
+					"Zirconium concentrate",
+					"Powdered zircon concentrate",
+					"Staurolite concentrate"
+				],
+				[
+					"Titanium sponge",
+					"Titanium slag",
+					"Titanium ingots",
+					"Copper",
+					"Aluminum"
+				]
+			],
+			[
+				"Granular distyne-sillimant concentrate",
+				"Powdered distyne-sillimant concentrate",
+				"Powdered distyne-sillimant concentrate",
+				"Dense natural sand",
+				"Quartz sand for the glass industry"
+			]
+		],
+		"blockNames": ["Metals", "Sand"]
+	},
+	"fertilizersPage": {
+		"title": "Fertilizers",
+		"content": {
+			"title": "Fertilizers",
+			"subtitle": "",
+			"text": "Our company offers a wide range of fertilizers for the agricultural industry, which allows us to meet the needs of our customers in full",
+			"list": ["", "", ""]
+		},
+		"blocks": [
+			[
+				"Urea",
+				"Ammonium nitrate",
+				"Calcium ammonium nitrate",
+				"Ammonium sulfate",
+				"Urea-ammonia mixture"
+			],
+			[
+				"Diammonium phosphate",
+				"Monoammonium phosphate",
+				"Triple superphosphate",
+				"Single superphosphate"
+			],
+			[
+				"15-15-15",
+				"16-16-16",
+				"16-20-0",
+				"20-20-0",
+				"20-10-10",
+				"16-16-8",
+				"10-26-26",
+				"16-8-8",
+				"And many other special NP/NPK blends with or without trace elements"
+			],
+			[
+				"Granular and molded sulfur",
+				"Crushed feed sulfur",
+				"Stone phosphate-phosphoric acid",
+				"Sulphuric acid"
+			]
+		],
+		"blockNames": [
+			"Nitrogen fertilizers",
+			"Nitrogen fertilizers",
+			"Complex fertilizers",
+			"Raw materials"
+		]
+	},
+	"ammoniaPage": {
+		"title": "Aммиак",
+		"content": {
+			"title": "Aммиак",
+			"subtitle": "",
+			"text": "Мы предлагаем аммиак исключительно сертифицированного качества от надежных поставщиков, который соответствует самым высоким мировым стандартам качества.",
+			"list": ["", "", ""]
+		}
+	},
+	"energyPage": {
+		"title": "Energy sector",
+		"content": {
+			"title": "Energy sector",
+			"subtitle": "Our team has extensive experience in various energy sectors, which allows us to understand the current situation and development trends in the natural gas, oil and coal markets.",
+			"text": "Our experience is a guarantee of competitive conditions for the supply of energy resources to our customers.",
+			"list": [
+				"Favorable terms of cooperation",
+				"World quality standards",
+				"Continuous and efficient work"
+			]
+		}
 	}
 }

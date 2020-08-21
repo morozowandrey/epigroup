@@ -36,13 +36,13 @@ const LanguageMenu = (props) => {
 			>
 				Eng
 			</button>
-			{/* <button
+			<button
 				className="language-menu__item"
 				style={state.active === "cze" ? { color: "#fff" } : {}}
 				onClick={(e) => handleChange("cze")}
 			>
 				Cze
-			</button> */}
+			</button>
 		</div>
 	);
 };
