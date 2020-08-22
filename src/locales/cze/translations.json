@@ -145,41 +145,43 @@
 		},
 		"blocks": [
 			[
-				"Dusičnan amonný",
-				"Dusičnan amonný vápenatý",
-				"Dusičnan amonný vápenatý",
-				"Síran amonný",
-				"Směs močoviny a amoniaku"
+				[
+					"Dusičnan amonný",
+					"Dusičnan amonný vápenatý",
+					"Dusičnan amonný vápenatý",
+					"Síran amonný",
+					"Směs močoviny a amoniaku"
+				],
+				[
+					"Diamonium fosfát",
+					"Monoamonium fosfát",
+					"Trojitý superfosfát",
+					"Superfosfát"
+				]
 			],
 			[
-				"Diamonium fosfát",
-				"Monoamonium fosfát",
-				"Trojitý superfosfát",
-				"Superfosfát"
-			],
-			[
-				"15-15-15",
-				"16-16-16",
-				"16-20-0",
-				"20-20-0",
-				"20-10-10",
-				"16-16-8",
-				"10-26-26",
-				"16-8-8",
-				"A mnoho dalších speciálních směsí NP / NPK se stopovými prvky nebo bez nich"
-			],
-			[
-				"Granulovaná a formovaná síra",
-				"Drcená krmná síra",
-				"Kyselina fosfor-fosforečná",
-				"Kyselina sírová"
+				[
+					"15-15-15",
+					"16-16-16",
+					"16-20-0",
+					"20-20-0",
+					"20-10-10",
+					"16-16-8",
+					"10-26-26",
+					"16-8-8",
+					"A mnoho dalších speciálních směsí NP / NPK se stopovými prvky nebo bez nich"
+				],
+				[
+					"Granulovaná a formovaná síra",
+					"Drcená krmná síra",
+					"Kyselina fosfor-fosforečná",
+					"Kyselina sírová"
+				]
 			]
 		],
 		"blockNames": [
-			"Dusíkatá hnojiva",
-			"Fosforečná hnojiva",
-			"Složitá hnojiva",
-			"Suroviny pro výrobu"
+			["Dusíkatá hnojiva", "Fosforečná hnojiva"],
+			["Složitá hnojiva", "Suroviny pro výrobu"]
 		]
 	},
 	"ammoniaPage": {

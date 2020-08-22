@@ -149,41 +149,43 @@
 		},
 		"blocks": [
 			[
-				"Urea",
-				"Ammonium nitrate",
-				"Calcium ammonium nitrate",
-				"Ammonium sulfate",
-				"Urea-ammonia mixture"
+				[
+					"Urea",
+					"Ammonium nitrate",
+					"Calcium ammonium nitrate",
+					"Ammonium sulfate",
+					"Urea-ammonia mixture"
+				],
+				[
+					"Diammonium phosphate",
+					"Monoammonium phosphate",
+					"Triple superphosphate",
+					"Single superphosphate"
+				]
 			],
 			[
-				"Diammonium phosphate",
-				"Monoammonium phosphate",
-				"Triple superphosphate",
-				"Single superphosphate"
-			],
-			[
-				"15-15-15",
-				"16-16-16",
-				"16-20-0",
-				"20-20-0",
-				"20-10-10",
-				"16-16-8",
-				"10-26-26",
-				"16-8-8",
-				"And many other special NP/NPK blends with or without trace elements"
-			],
-			[
-				"Granular and molded sulfur",
-				"Crushed feed sulfur",
-				"Stone phosphate-phosphoric acid",
-				"Sulphuric acid"
+				[
+					"15-15-15",
+					"16-16-16",
+					"16-20-0",
+					"20-20-0",
+					"20-10-10",
+					"16-16-8",
+					"10-26-26",
+					"16-8-8",
+					"And many other special NP/NPK blends with or without trace elements"
+				],
+				[
+					"Granular and molded sulfur",
+					"Crushed feed sulfur",
+					"Stone phosphate-phosphoric acid",
+					"Sulphuric acid"
+				]
 			]
 		],
 		"blockNames": [
-			"Nitrogen fertilizers",
-			"Nitrogen fertilizers",
-			"Complex fertilizers",
-			"Raw materials"
+			["Nitrogen fertilizers", "Phosphate fertilizers"],
+			["Complex fertilizers", "Raw materials"]
 		]
 	},
 	"ammoniaPage": {

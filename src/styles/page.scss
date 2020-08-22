@@ -133,6 +133,7 @@
 				&-header {
 					margin-bottom: 48px;
 					align-items: baseline;
+					cursor: pointer;
 
 					@include media-breakpoint-down(768) {
 						align-items: center;
@@ -153,7 +154,24 @@
 						}
 					}
 
-					&__btn {
+					&__open,
+					&__close {
+						display: block;
+
+						width: 24px;
+						height: 24px;
+
+						background-repeat: no-repeat;
+						background-size: cover;
+						background-position: center;
+					}
+
+					&__open {
+						background-image: url(../../static/plus.svg);
+					}
+
+					&__close {
+						background-image: url(../../static/minus.svg);
 					}
 				}
 
@@ -231,19 +249,4 @@
 			}
 		}
 	}
-}
-
-.input-group {
-	height: 24px;
-}
-input[type="checkbox"] {
-	display: none;
-}
-input[type="checkbox"] + label:after {
-	content: url(../../static/plus.svg);
-	cursor: pointer;
-}
-input[type="checkbox"]:checked + label:after {
-	content: url(../../static/minus.svg);
-	cursor: pointer;
 }

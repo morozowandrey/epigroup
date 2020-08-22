@@ -9,6 +9,7 @@ import resoursesImg from "../../static/resourses-page-bg.jpg";
 const ResoursesPage = (props) => {
 	const [state, setState] = React.useState({});
 	const { t, i18n } = useTranslation();
+	let ln = i18n.language ? i18n.language : i18n.languages[1];
 
 	function toggleBlockOpen(val) {
 		if (val === 1) {
@@ -47,7 +48,7 @@ const ResoursesPage = (props) => {
 			<PageHero
 				background={resoursesImg}
 				modificatorClass={"page-hero_resourses"}
-				title={"Энергетика"}
+				title={t("resoursesPage.title")}
 			/>
 			<div className="page-header">
 				<Header />
@@ -57,13 +58,10 @@ const ResoursesPage = (props) => {
 					<div className="page-content">
 						<div className="page-content-description">
 							<h3 className="page-content-description__title">
-								Удобрения
+								{t("resoursesPage.content.title")}
 							</h3>
 							<p className="page-content-description__text">
-								Наша компания предлагает широкий спектр
-								удобрений для аграрной промышленности, который
-								позволяет удовлетворить потребности клиентов в
-								полном объеме.
+								{t("resoursesPage.content.text")}
 							</p>
 						</div>
 
