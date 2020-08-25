@@ -21,22 +21,22 @@
 			{
 				"title": "Energetics",
 				"text": "Our team has extensive experience in various energy sectors, which allows us to understand the current situation and development trends in the natural gas, oil and coal markets.",
-				"img": "energyImg"
+				"url": "energy"
 			},
 			{
 				"title": "Minerals and metals",
 				"text": "By diversifying geographically and strategically linking in different countries with us, you will be able to participate in a limited, specialized supply of minerals, metals and derivatives.",
-				"img": "resoursesImg"
+				"url": "resourses"
 			},
 			{
 				"title": "Fertilizers",
 				"text": "Our company offers a wide range of fertilizers for the agricultural industry, which allows us to meet the needs of our customers in full",
-				"img": "fertilizerImg"
+				"url": "fertilizers"
 			},
 			{
 				"title": "Ammonia",
 				"text": "We offer ammonia of exclusively certified quality from reliable suppliers that meets the highest international quality standards.",
-				"img": "ammoniaImg"
+				"url": "ammonia"
 			}
 		],
 		"cta": "Send a request"

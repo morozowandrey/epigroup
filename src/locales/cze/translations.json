@@ -20,19 +20,23 @@
 		"slides": [
 			{
 				"title": "Energetika",
-				"text": "Náš tým má rozsáhlé zkušenosti z různých odvětví energetiky, což nám umožňuje pochopit současnou situaci a vývojové trendy na trzích se zemním plynem, ropou a uhlím."
+				"text": "Náš tým má rozsáhlé zkušenosti z různých odvětví energetiky, což nám umožňuje pochopit současnou situaci a vývojové trendy na trzích se zemním plynem, ropou a uhlím.",
+				"url": "energy"
 			},
 			{
 				"title": "Minerály a kovy",
-				"text": "Diverzifikací geografického a strategického propojení v různých zemích se budete moci s námi podílet na vymezené specializované dodávce nerostů, kovů a derivátů."
+				"text": "Diverzifikací geografického a strategického propojení v různých zemích se budete moci s námi podílet na vymezené specializované dodávce nerostů, kovů a derivátů.",
+				"url": "resourses"
 			},
 			{
 				"title": "Hnojiva",
-				"text": "Naše společnost nabízí širokou škálu hnojiv pro zemědělství, což nám umožňuje plně uspokojit potřeby našich zákazníků."
+				"text": "Naše společnost nabízí širokou škálu hnojiv pro zemědělství, což nám umožňuje plně uspokojit potřeby našich zákazníků.",
+				"url": "fertilizers"
 			},
 			{
 				"title": "Amoniak",
-				"text": "Nabízíme čpavek výhradně certifikované kvality od spolehlivých dodavatelů, kteří splňují nejvyšší mezinárodní standarty kvality."
+				"text": "Nabízíme čpavek výhradně certifikované kvality od spolehlivých dodavatelů, kteří splňují nejvyšší mezinárodní standarty kvality.",
+				"url": "ammonia"
 			}
 		],
 		"cta": "Poslat žádost"

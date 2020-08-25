@@ -8,6 +8,7 @@ import ammoniaImg from "../../static/ammonia-slide.jpg";
 import energyImg from "../../static/energy-slide.jpg";
 import fertilizerImg from "../../static/fertilizer-slide.jpg";
 import resoursesImg from "../../static/resourses-slide.jpg";
+import { Link } from "gatsby";
 
 export default function ActivitySlider() {
 	const [state, setState] = React.useState({});
@@ -126,19 +127,26 @@ export default function ActivitySlider() {
 									key={index}
 									className="activity-slider-item"
 								>
-									<div
-										className="activity-slider-item-content"
+									<Link
+										to={el.url}
 										style={{
-											backgroundImage: `url(${activitiesSlidesImages[index]})`,
+											textDecoration: "none",
 										}}
 									>
-										<p className="activity-slider-item__title">
-											{el.title}
-										</p>
-										<p className="activity-slider-item__text">
-											{el.text}
-										</p>
-									</div>
+										<div
+											className="activity-slider-item-content"
+											style={{
+												backgroundImage: `url(${activitiesSlidesImages[index]})`,
+											}}
+										>
+											<p className="activity-slider-item__title">
+												{el.title}
+											</p>
+											<p className="activity-slider-item__text">
+												{el.text}
+											</p>
+										</div>
+									</Link>
 								</div>
 							))}
 						</TinySlider>
