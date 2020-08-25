@@ -115,29 +115,31 @@
 		"blocks": [
 			[
 				[
-					"Rutile concentrate",
-					"Ilmenite concentrate",
-					"Zirconium concentrate",
-					"Powdered zircon concentrate",
-					"Staurolite concentrate"
+					[
+						"Rutile concentrate",
+						"Ilmenite concentrate",
+						"Zirconium concentrate",
+						"Powdered zircon concentrate",
+						"Staurolite concentrate"
+					],
+					[
+						"Titanium sponge",
+						"Titanium slag",
+						"Titanium ingots",
+						"Copper",
+						"Aluminum"
+					]
 				],
 				[
-					"Titanium sponge",
-					"Titanium slag",
-					"Titanium ingots",
-					"Copper",
-					"Aluminum"
+					"Granular distyne-sillimant concentrate",
+					"Powdered distyne-sillimant concentrate",
+					"Powdered distyne-sillimant concentrate",
+					"Dense natural sand",
+					"Quartz sand for the glass industry"
 				]
-			],
-			[
-				"Granular distyne-sillimant concentrate",
-				"Powdered distyne-sillimant concentrate",
-				"Powdered distyne-sillimant concentrate",
-				"Dense natural sand",
-				"Quartz sand for the glass industry"
 			]
 		],
-		"blockNames": ["Metals", "Sand"]
+		"blockNames": [["Metals", "Sand"]]
 	},
 	"fertilizersPage": {
 		"title": "Fertilizers",

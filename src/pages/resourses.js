@@ -11,36 +11,17 @@ const ResoursesPage = (props) => {
 	const { t, i18n } = useTranslation();
 	let ln = i18n.language ? i18n.language : i18n.languages[1];
 
+	const resoursesBlocks = t("resoursesPage.blocks");
+	const resoursesBlocksNames = t("resoursesPage.blockNames");
+
 	function toggleBlockOpen(val) {
-		if (val === 1) {
-			setState({
-				isOpen1: !state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 2) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: !state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 3) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: !state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 4) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: !state.isOpen4,
-			});
-		}
+		val === state[val]
+			? setState({
+					[val]: false,
+			  })
+			: setState({
+					[val]: val,
+			  });
 	}
 
 	return (
@@ -66,100 +47,107 @@ const ResoursesPage = (props) => {
 						</div>
 
 						<div className="page-content-blocks">
-							<div className="page-content-blocks-group">
+							{resoursesBlocks.map((group, groupIndex) => (
 								<div
-									className={
-										state.isOpen3
-											? "page-content-blocks-block_open"
-											: "page-content-blocks-block"
-									}
+									className="page-content-blocks-group"
+									key={groupIndex}
 								>
-									<header className="page-content-blocks-block-header flex-between">
-										<p className="page-content-blocks-block-header__title">
-											Азотные
-										</p>
-
-										<div className="input-group">
-											<input
-												type="checkbox"
-												id="hidden-input3"
-												name="hidden-input3"
-												onChange={(e) =>
-													toggleBlockOpen(3)
+									{group.map((block, blockIndex) => (
+										<div
+											key={blockIndex}
+											className={
+												state[
+													`${groupIndex}${blockIndex}`
+												]
+													? "page-content-blocks-block_open"
+													: "page-content-blocks-block"
+											}
+										>
+											<header
+												className="page-content-blocks-block-header flex-between"
+												onClick={(e) =>
+													toggleBlockOpen(
+														`${groupIndex}${blockIndex}`
+													)
 												}
-											/>
-											<label htmlFor="hidden-input3"></label>
+											>
+												<p className="page-content-blocks-block-header__title">
+													{
+														resoursesBlocksNames[
+															groupIndex
+														][blockIndex]
+													}
+												</p>
+
+												{state[
+													`${groupIndex}${blockIndex}`
+												] ? (
+													<span className="page-content-blocks-block-header__close"></span>
+												) : (
+													<span className="page-content-blocks-block-header__open"></span>
+												)}
+											</header>
+
+											<div className="page-content-blocks-block-content">
+												{block.length === 2 && (
+													<div className="page-content-blocks-block-content_paired">
+														{block.map(
+															(
+																listItem,
+																listItemIndex
+															) => (
+																<ul
+																	className="page-content-blocks-block-content-list page-content-blocks-block-content-list_paired"
+																	key={
+																		listItemIndex
+																	}
+																>
+																	{listItem.map(
+																		(
+																			listItem2,
+																			listItemIndex2
+																		) => (
+																			<li
+																				key={
+																					listItemIndex2
+																				}
+																				className="page-content-blocks-block-content-list__item"
+																			>
+																				{
+																					listItem2
+																				}
+																			</li>
+																		)
+																	)}
+																</ul>
+															)
+														)}
+													</div>
+												)}
+												{block.length > 2 && (
+													<ul className="page-content-blocks-block-content-list">
+														{block.map(
+															(
+																listItem,
+																listItemIndex
+															) => (
+																<li
+																	key={
+																		listItemIndex
+																	}
+																	className="page-content-blocks-block-content-list__item"
+																>
+																	{listItem}
+																</li>
+															)
+														)}
+													</ul>
+												)}
+											</div>
 										</div>
-									</header>
-
-									<div className="page-content-blocks-block-content">
-										<ul className="page-content-blocks-block-content-list">
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат рутиловый
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат ильменитовый
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат цирконовый
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат цирконовый
-												порошкообразный
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат ставролитовый
-											</li>
-										</ul>
-									</div>
+									))}
 								</div>
-								<div
-									className={
-										state.isOpen4
-											? "page-content-blocks-block_open"
-											: "page-content-blocks-block"
-									}
-								>
-									<header className="page-content-blocks-block-header flex-between">
-										<p className="page-content-blocks-block-header__title">
-											Азотные
-										</p>
-
-										<div className="input-group">
-											<input
-												type="checkbox"
-												id="hidden-input4"
-												name="hidden-input4"
-												onChange={(e) =>
-													toggleBlockOpen(4)
-												}
-											/>
-											<label htmlFor="hidden-input4"></label>
-										</div>
-									</header>
-
-									<div className="page-content-blocks-block-content">
-										<ul className="page-content-blocks-block-content-list">
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат рутиловый
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат ильменитовый
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат цирконовый
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат цирконовый
-												порошкообразный
-											</li>
-											<li className="page-content-blocks-block-content-list__item">
-												Концентрат ставролитовый
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+							))}
 						</div>
 					</div>
 				</div>

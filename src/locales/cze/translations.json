@@ -111,29 +111,31 @@
 		"blocks": [
 			[
 				[
-					"Koncentrát rutilu",
-					"Koncentrát ilmenitu",
-					"Koncentrát zirkónu",
-					"Práškový koncentrát zirkónu",
-					"Práškový koncentrát zirkónu"
+					[
+						"Koncentrát rutilu",
+						"Koncentrát ilmenitu",
+						"Koncentrát zirkónu",
+						"Práškový koncentrát zirkónu",
+						"Práškový koncentrát zirkónu"
+					],
+					[
+						"Titanová houba",
+						"Titanová struska",
+						"Titanové ingoty",
+						"Měď",
+						"Hliník"
+					]
 				],
 				[
-					"Titanová houba",
-					"Titanová struska",
-					"Titanové ingoty",
-					"Měď",
-					"Hliník"
+					"Granular distyne-sillimant concentrate",
+					"Powdered distyne-sillimant concentrate",
+					"Powdered distyne-sillimant concentrate",
+					"Dense natural sand",
+					"Quartz sand for the glass industry"
 				]
-			],
-			[
-				"Granular distyne-sillimant concentrate",
-				"Powdered distyne-sillimant concentrate",
-				"Powdered distyne-sillimant concentrate",
-				"Dense natural sand",
-				"Quartz sand for the glass industry"
 			]
 		],
-		"blockNames": ["Kovy", "Písek"]
+		"blockNames": [["Kovy", "Písek"]]
 	},
 	"fertilizersPage": {
 		"title": "Hnojiva",
