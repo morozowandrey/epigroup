@@ -1,0 +1,12 @@
+@import "../styles/var.scss";
+@import "../styles/media-mixins.scss";
+
+.grid-2fr {
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media-breakpoint-down(812) {
+    grid-template-columns: none;
+  }
+}

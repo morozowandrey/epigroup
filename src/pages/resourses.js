@@ -5,6 +5,7 @@ import Contact from "../components/contact";
 import Header from "../components/header";
 import { useTranslation } from "react-i18next";
 import resoursesImg from "../../static/resourses-page-bg.jpg";
+import Footer from "../components/footer";
 
 const ResoursesPage = (props) => {
 	const [state, setState] = React.useState({});
@@ -154,6 +155,7 @@ const ResoursesPage = (props) => {
 			</div>
 
 			<Contact />
+			<Footer />
 		</div>
 	);
 };

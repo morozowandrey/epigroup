@@ -4,6 +4,7 @@ import Contact from "../components/contact";
 import Header from "../components/header";
 import { useTranslation } from "react-i18next";
 import fertilizerImg from "../../static/fertilizer-page-bg.jpg";
+import Footer from "../components/footer";
 
 const FertilizersPage = (props) => {
 	const [state, setState] = React.useState({});
@@ -115,6 +116,7 @@ const FertilizersPage = (props) => {
 			</div>
 
 			<Contact />
+			<Footer />
 		</div>
 	);
 };

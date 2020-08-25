@@ -10,7 +10,7 @@ export default function About() {
 	return (
 		<div id="about" className="about flex-center">
 			<div className="wrapper">
-				<div className="about-content flex-between">
+				<div className="about-content grid-2fr">
 					<div className="about-content-box-1">
 						<h2 className="about-content__title">
 							{t("about.title")}

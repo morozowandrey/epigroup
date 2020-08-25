@@ -37,7 +37,7 @@
 		&-box {
 			&-1 {
 				min-width: 516px;
-				margin-right: 80px;
+				// margin-right: 80px;
 
 				@include media-breakpoint-down(1024) {
 					min-width: 440px;
@@ -138,8 +138,7 @@
 						width: 76px;
 						height: 4px;
 
-						background: url("../../static/about-line_mob_1.svg")
-							no-repeat;
+						background: url("../../static/about-line_mob_1.svg") no-repeat;
 
 						@include media-breakpoint-down(375) {
 							display: block;
@@ -163,8 +162,7 @@
 						width: 143px;
 						height: 6px;
 
-						background: url("../../static/about-line_mob_2.svg")
-							no-repeat;
+						background: url("../../static/about-line_mob_2.svg") no-repeat;
 						@include media-breakpoint-down(375) {
 							display: block;
 						}

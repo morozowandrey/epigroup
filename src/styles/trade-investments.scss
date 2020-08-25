@@ -20,7 +20,7 @@
 		}
 
 		&__title {
-			margin-bottom: 40px;
+			margin-bottom: 24px;
 
 			font-family: Lora;
 			font-style: normal;
@@ -38,6 +38,27 @@
 			@include media-breakpoint-down(375) {
 				font-size: 22px;
 				line-height: 32px;
+			}
+		}
+
+		&__text {
+			margin-bottom: 40px;
+
+			font-family: Inter;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 32px;
+
+			color: #fff;
+
+			@include media-breakpoint-down(812) {
+				margin-bottom: 32px;
+			}
+
+			@include media-breakpoint-down(375) {
+				font-size: 16px;
+				line-height: 26px;
 			}
 		}
 

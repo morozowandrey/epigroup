@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./hero.module.scss";
 import CtaButton from "./cta.button";
 import { useTranslation } from "react-i18next";
 

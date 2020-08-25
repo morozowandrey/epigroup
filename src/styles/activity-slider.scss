@@ -47,6 +47,7 @@
 
 		&__title {
 			position: relative;
+			display: inline-block;
 			margin-bottom: 40px;
 
 			font-family: Lora;
@@ -98,15 +99,19 @@
 
 			&_en {
 				&::after {
-					left: 0px;
+					left: inherit;
+					right: -10px;
 					bottom: -10px;
 
 					width: 100%;
 					min-width: unset;
 					height: 12px;
-					max-width: 280px;
-					@include media-breakpoint-down(1024) {
-						max-width: 250px;
+					max-width: 163px;
+					background: url("../../static/activity-line_short.svg") no-repeat;
+					background-size: contain;
+
+					@include media-breakpoint-down(375) {
+						max-width: 100px;
 					}
 				}
 			}
@@ -169,8 +174,7 @@
 						width: 76px;
 						height: 4px;
 
-						background: url("../../static/about-line_mob_1.svg")
-							no-repeat;
+						background: url("../../static/about-line_mob_1.svg") no-repeat;
 
 						@include media-breakpoint-down(375) {
 							display: block;
@@ -194,8 +198,7 @@
 						width: 143px;
 						height: 6px;
 
-						background: url("../../static/about-line_mob_2.svg")
-							no-repeat;
+						background: url("../../static/about-line_mob_2.svg") no-repeat;
 						@include media-breakpoint-down(375) {
 							display: block;
 						}

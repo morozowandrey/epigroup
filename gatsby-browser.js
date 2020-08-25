@@ -4,6 +4,7 @@ import "./src/styles/typography.scss";
 
 // helpers
 import "./src/styles/helpers.scss";
+import "./src/styles/grid.scss";
 import "./src/styles/buttons.scss";
 import "./src/styles/language-menu.scss";
 import "./src/styles/media-mixins.scss";

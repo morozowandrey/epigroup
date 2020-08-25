@@ -18,7 +18,7 @@ export default function Results() {
 				>
 					{t("results.title")}
 				</h2>
-				<div className="results-content">
+				<div className="results-content grid-2fr">
 					<div className="results-content-box results-content-box_1">
 						<div className="results-content-item">
 							<p className="results-content-item__value results-content-item__value_1">

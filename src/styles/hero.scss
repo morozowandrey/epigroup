@@ -4,7 +4,11 @@
 .hero {
 	display: flex;
 	align-items: center;
-	padding: 180px 0 180px;
+	padding: 200px 0 200px;
+
+	@include media-breakpoint-down(1536) {
+		padding: 160px 0 160px;
+	}
 
 	@include media-breakpoint-down(812) {
 		padding: 140px 0 140px;
@@ -18,8 +22,7 @@
 		font-style: normal;
 		font-weight: normal;
 		font-size: 46px;
-		line-height: 1.5;
-		letter-spacing: 1px;
+		line-height: 66px;
 		color: $blue;
 
 		@include media-breakpoint-down(576) {

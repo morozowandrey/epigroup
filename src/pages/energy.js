@@ -5,6 +5,7 @@ import Contact from "../components/contact";
 import Header from "../components/header";
 import { useTranslation } from "react-i18next";
 import energyImg from "../../static/energy-page-bg.jpg";
+import Footer from "../components/footer";
 
 const EnergyPage = (props) => {
 	const [state, setState] = React.useState({});
@@ -58,6 +59,7 @@ const EnergyPage = (props) => {
 			</div>
 
 			<Contact />
+			<Footer />
 		</div>
 	);
 };

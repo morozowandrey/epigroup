@@ -5,6 +5,7 @@ import Contact from "../components/contact";
 import Header from "../components/header";
 import { useTranslation } from "react-i18next";
 import ammoniaImg from "../../static/ammonia-page-bg.jpg";
+import Footer from "../components/footer";
 
 const AmmoniaPage = (props) => {
 	const [state, setState] = React.useState({});
@@ -36,6 +37,7 @@ const AmmoniaPage = (props) => {
 			</div>
 
 			<Contact />
+			<Footer />
 		</div>
 	);
 };

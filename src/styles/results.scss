@@ -51,8 +51,7 @@
 				bottom: -6px;
 				min-width: 154px;
 
-				background: url("../../static/results-title-line_en.svg")
-					no-repeat;
+				background: url("../../static/results-title-line_en.svg") no-repeat;
 
 				@include media-breakpoint-down(812) {
 					min-width: 80px;
@@ -66,10 +65,15 @@
 	}
 
 	&-content {
-		display: flex;
+		// display: flex;
 
 		@include media-breakpoint-down(812) {
-			flex-direction: column;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media-breakpoint-down(375) {
+			grid-template-columns: none;
+			grid-gap: 0;
 		}
 
 		&-box {

@@ -52,11 +52,15 @@ export default function TradeInvestments() {
 	return (
 		<div className="investments">
 			<div className="wrapper">
-				<div className="investments-content flex-between">
+				<div className="investments-content grid-2fr">
 					<div className="investments-content-box investments-content-box_1">
 						<h2 className="investments-content__title">
 							{t("tradeinvestments.title")}
 						</h2>
+
+						<p className="investments-content__text">
+							{t("tradeinvestments.text-1")}
+						</p>
 
 						<span className="investments-cta_desk">
 							<CtaButton
