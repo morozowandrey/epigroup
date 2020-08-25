@@ -47,6 +47,13 @@
 				}
 			}
 
+			&-block {
+				display: flex;
+				align-self: flex-start;
+				justify-content: flex-start;
+				flex-direction: column;
+			}
+
 			&__title {
 				font-family: Lora;
 				font-style: normal;

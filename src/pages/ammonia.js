@@ -10,44 +10,12 @@ const AmmoniaPage = (props) => {
 	const [state, setState] = React.useState({});
 	const { t, i18n } = useTranslation();
 
-	function toggleBlockOpen(val) {
-		if (val === 1) {
-			setState({
-				isOpen1: !state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 2) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: !state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 3) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: !state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 4) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: !state.isOpen4,
-			});
-		}
-	}
-
 	return (
 		<div className="page">
 			<PageHero
 				background={ammoniaImg}
 				modificatorClass={"page-hero_ammonia"}
-				title={"Энергетика"}
+				title={t("ammoniaPage.title")}
 			/>
 			<div className="page-header">
 				<Header />
@@ -57,13 +25,10 @@ const AmmoniaPage = (props) => {
 					<div className="page-content">
 						<div className="page-content-description page-content-description_standalone">
 							<h3 className="page-content-description__title">
-								Удобрения
+								{t("ammoniaPage.content.title")}
 							</h3>
 							<p className="page-content-description__text">
-								Наша компания предлагает широкий спектр
-								удобрений для аграрной промышленности, который
-								позволяет удовлетворить потребности клиентов в
-								полном объеме.
+								{t("ammoniaPage.content.text")}
 							</p>
 						</div>
 					</div>

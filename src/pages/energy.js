@@ -10,43 +10,13 @@ const EnergyPage = (props) => {
 	const [state, setState] = React.useState({});
 	const { t, i18n } = useTranslation();
 
-	function toggleBlockOpen(val) {
-		if (val === 1) {
-			setState({
-				isOpen1: !state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 2) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: !state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 3) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: !state.isOpen3,
-				isOpen4: state.isOpen4,
-			});
-		} else if (val === 4) {
-			setState({
-				isOpen1: state.isOpen1,
-				isOpen2: state.isOpen2,
-				isOpen3: state.isOpen3,
-				isOpen4: !state.isOpen4,
-			});
-		}
-	}
+	const energyPageContentList = t("energyPage.content.list");
 
 	return (
 		<div className="page">
 			<PageHero
 				background={energyImg}
-				title={"Энергетика"}
+				title={t("energyPage.title")}
 				modificatorClass={"page-hero_energy"}
 			/>
 			<div className="page-header">
@@ -56,34 +26,30 @@ const EnergyPage = (props) => {
 				<div className="wrapper">
 					<div className="page-content">
 						<div className="page-content-description page-content-description_standalone">
-							<div className="">
+							<div className="page-content-description-block">
 								<h3 className="page-content-description__title">
-									Энергетика
+									{t("energyPage.content.title")}
 								</h3>
 								<p className="page-content-description__text">
-									Наша команда имеет огромный опыт работы в
-									разных сегментах энергетики, что позволяет
-									нам понимать текущую ситуацию и тренды
-									развития на рынках природного газа, нефти и
-									угольной промышленности.
+									{t("energyPage.content.subtitle")}
 								</p>
 							</div>
-							<div className="">
+
+							<div className="page-content-description-block">
 								<p className="page-content-description__text page-content-description__text_mb">
-									Наш опыт является гарантией конкурентных
-									условий поставки энергоресурсов нашим
-									клиентам.
+									{t("energyPage.content.text")}
 								</p>
 								<ul className="page-content-blocks-block-content-list page-content-blocks-block-content-list_content">
-									<li className="page-content-blocks-block-content-list__item">
-										выгодные условия сотрудничества
-									</li>
-									<li className="page-content-blocks-block-content-list__item">
-										мировые стандарты качества
-									</li>
-									<li className="page-content-blocks-block-content-list__item">
-										беспрерывная и эффективная работа
-									</li>
+									{energyPageContentList.map(
+										(listItem, listItemIndex) => (
+											<li
+												className="page-content-blocks-block-content-list__item"
+												key={listItemIndex}
+											>
+												{listItem}
+											</li>
+										)
+									)}
 								</ul>
 							</div>
 						</div>

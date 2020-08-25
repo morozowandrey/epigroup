@@ -187,11 +187,11 @@
 		]
 	},
 	"ammoniaPage": {
-		"title": "Ammonia",
+		"title": "Aммиак",
 		"content": {
-			"title": "Ammonia",
+			"title": "Aммиак",
 			"subtitle": "",
-			"text": "We offer ammonia of exclusively certified quality from reliable suppliers that meets the highest international quality standards.",
+			"text": "Мы предлагаем аммиак исключительно сертифицированного качества от надежных поставщиков, который соответствует самым высоким мировым стандартам качества.",
 			"list": ["", "", ""]
 		}
 	},
