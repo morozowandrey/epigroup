@@ -10,10 +10,6 @@
 		padding: 160px 0 160px;
 	}
 
-	@include media-breakpoint-down(812) {
-		padding: 140px 0 140px;
-	}
-
 	&__title {
 		position: relative;
 		margin-bottom: 40px;
@@ -27,11 +23,13 @@
 
 		@include media-breakpoint-down(576) {
 			font-size: 27px;
+			line-height: 1.2;
 			margin-bottom: 32px;
 		}
 
 		@include media-breakpoint-down(375) {
 			font-size: 23px;
+			line-height: 40px;
 		}
 	}
 
@@ -55,11 +53,11 @@
 		}
 
 		@include media-breakpoint-down(375) {
-			width: 166px;
+			width: 156px;
 			height: 6px;
 
-			top: 28px;
-			left: -2px;
+			top: 30px;
+			left: -4px;
 		}
 	}
 }
