@@ -10,6 +10,10 @@
 		padding: 160px 0 160px;
 	}
 
+	@include media-breakpoint-down(812) {
+		padding: 140px 0 140px;
+	}
+
 	&__title {
 		position: relative;
 		margin-bottom: 40px;
