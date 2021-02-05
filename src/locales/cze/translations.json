@@ -1,215 +1,215 @@
 {
-	"header": ["Domovská", "O firmě", "Odbornost", "Kontakty"],
-	"hero": {
-		"title": "Víme, jak maximalizovat zisky při provádění úspěšných obchodních transakcí",
-		"cta": "Poslat žádost"
-	},
-	"about": {
-		"title": "EPI group — nezávislá obchodní společnost",
-		"text-1": "Pracujeme otevřeně, čestně, transparentně a každému zákazníkovi nabízíme spolehlivé partnerství. Hlavní prioritou naší činnosti je kvalita a odpovědnost",
-		"text-2": "vůči každému z našich partnerů.",
-		"text-3": "Skupina EPI nabízí výhradně certifikované produkty od spolehlivých dodavatelů, které splňují nejvyšší mezinárodní standarty kvality.",
-		"accent-text-1": "",
-		"accent-text-2": "",
-		"cta": "Dozvědět se více o nás"
-	},
-	"activitieslider": {
-		"title-1": "Hlavní směry",
-		"title-2": "oblasti činnosti",
-		"text": "Silná vědecká a technická základna podniku nám umožňuje řešit problémy jakékoli složitosti",
-		"slides": [
-			{
-				"title": "Energetika",
-				"text": "Náš tým má rozsáhlé zkušenosti z různých odvětví energetiky, což nám umožňuje pochopit současnou situaci a vývojové trendy na trzích se zemním plynem, ropou a uhlím.",
-				"url": "energy"
-			},
-			{
-				"title": "Minerály a kovy",
-				"text": "Diverzifikací geografického a strategického propojení v různých zemích se budete moci s námi podílet na vymezené specializované dodávce nerostů, kovů a derivátů.",
-				"url": "resourses"
-			},
-			{
-				"title": "Hnojiva",
-				"text": "Naše společnost nabízí širokou škálu hnojiv pro zemědělství, což nám umožňuje plně uspokojit potřeby našich zákazníků.",
-				"url": "fertilizers"
-			},
-			{
-				"title": "Amoniak",
-				"text": "Nabízíme čpavek výhradně certifikované kvality od spolehlivých dodavatelů, kteří splňují nejvyšší mezinárodní standarty kvality.",
-				"url": "ammonia"
-			}
-		],
-		"cta": "Poslat žádost"
-	},
-	"tradeinvestments": {
-		"title": "Obchodní financování",
-		"text-1": "Pomáháme dovážejícím společnostem vyhnout se 100% platbě předem při vypořádání s dodavately a financování krátkodobé, střední a dlouhodobé.",
-		"slides": [
-			{
-				"title": "Pokud jste dovozce",
-				"arguments": [
-					"není třeba použít oběžná aktiva",
-					"příležitost spolupracovat s dodavately za nejvýhodnějších podmínek a za nejvýhodnější ceny",
-					"žádná rizika, že dodavatel zboží po platbě na základě smlouvy nedodá"
-				]
-			},
-			{
-				"title": "Pokud jste vývozce",
-				"arguments": [
-					"záruka platby za zaslané zboží",
-					"zvýšení objemu dodávek",
-					"rozšíření klientské základny z důvodu výhodnějších dodacích a platebních podmínek"
-				]
-			}
-		],
-		"cta": "Poslat žádost"
-	},
-	"results": {
-		"title": "Fakta, čísla, výsledky",
-		"year": {
-			"value": "15+",
-			"text": "Let zkušeností"
-		},
-		"projects": {
-			"value": "100+",
-			"text": "Проектов"
-		},
-		"clients": {
-			"value": "50+",
-			"text": "Partneři a klientů"
-		},
-		"countries": {
-			"value": "20+",
-			"text": "Zemí po celém světě"
-		}
-	},
-	"contact": {
-		"title": "Pošlete nám žádost",
-		"text-1": "Chcete se dozvědět více o skupině EPI s.r.o.?",
-		"text-2": "Od služeb k přístupu a lidem - rádi komunikujeme",
-		"tel": "+44 60 9372 5690",
-		"tellink": "tel:+44 60 9372 5690",
-		"email": "info@epigroup.cz",
-		"emaillink": "mailto:info@epigroup.cz",
-		"cta": "Poslat žádost",
-		"ctasent": "Poslal",
-		"formplaceholders": {
-			"name": "Název",
-			"company": "Společnost",
-			"email": "Emailová adresa",
-			"tel": "Telefon (volitelné)",
-			"message": "Zpráva"
-		}
-	},
-	"footer": {
-		"license": "© 2020 EPI GROUP s.r.o"
-	},
-	"resoursesPage": {
-		"title": "Minerály a kovy",
-		"content": {
-			"title": "Minerály a kovy",
-			"subtitle": "",
-			"text": "Diverzifikací geografického a strategického propojení v různých zemích se budete moci s námi podílet na vymezené specializované dodávce nerostů, kovů a derivátů.",
-			"list": ["", "", ""]
-		},
-		"blocks": [
-			[
-				[
-					[
-						"Koncentrát rutilu",
-						"Koncentrát ilmenitu",
-						"Koncentrát zirkónu",
-						"Práškový koncentrát zirkónu",
-						"Práškový koncentrát zirkónu"
-					],
-					[
-						"Titanová houba",
-						"Titanová struska",
-						"Titanové ingoty",
-						"Měď",
-						"Hliník"
-					]
-				],
-				[
-					"Granular distyne-sillimant concentrate",
-					"Powdered distyne-sillimant concentrate",
-					"Powdered distyne-sillimant concentrate",
-					"Dense natural sand",
-					"Quartz sand for the glass industry"
-				]
-			]
-		],
-		"blockNames": [["Kovy", "Písek"]]
-	},
-	"fertilizersPage": {
-		"title": "Hnojiva",
-		"content": {
-			"title": "Hnojiva",
-			"subtitle": "",
-			"text": "Naše společnost nabízí širokou škálu hnojiv pro zemědělství, což nám umožňuje plně uspokojit potřeby našich zákazníků",
-			"list": ["", "", ""]
-		},
-		"blocks": [
-			[
-				[
-					"Dusičnan amonný",
-					"Dusičnan amonný vápenatý",
-					"Dusičnan amonný vápenatý",
-					"Síran amonný",
-					"Směs močoviny a amoniaku"
-				],
-				[
-					"Diamonium fosfát",
-					"Monoamonium fosfát",
-					"Trojitý superfosfát",
-					"Superfosfát"
-				]
-			],
-			[
-				[
-					"15-15-15",
-					"16-16-16",
-					"16-20-0",
-					"20-20-0",
-					"20-10-10",
-					"16-16-8",
-					"10-26-26",
-					"16-8-8",
-					"A mnoho dalších speciálních směsí NP / NPK se stopovými prvky nebo bez nich"
-				],
-				[
-					"Granulovaná a formovaná síra",
-					"Drcená krmná síra",
-					"Kyselina fosfor-fosforečná",
-					"Kyselina sírová"
-				]
-			]
-		],
-		"blockNames": [
-			["Dusíkatá hnojiva", "Fosforečná hnojiva"],
-			["Složitá hnojiva", "Suroviny pro výrobu"]
-		]
-	},
-	"ammoniaPage": {
-		"title": "Amoniak",
-		"content": {
-			"title": "Amoniak",
-			"subtitle": "",
-			"text": "Nabízíme čpavek výhradně certifikované kvality od spolehlivých dodavatelů, kteří splňují nejvyšší mezinárodní standarty kvality.",
-			"list": ["", "", ""]
-		}
-	},
-	"energyPage": {
-		"title": "Energetika",
-		"content": {
-			"title": "Energetika",
-			"subtitle": "Náš tým má rozsáhlé zkušenosti z různých odvětví energetiky, což nám umožňuje pochopit současnou situaci a vývojové trendy na trzích se zemním plynem, ropou a uhlím.",
-			"text": "Naše zkušenosti jsou zárukou konkurenčních podmínek pro dodávky energetických zdrojů našim zákazníkům.",
-			"list": [
-				"příznivé podmínky spolupráce",
-				"světové standarty kvality",
-				"nepřetržitá a efektivní práce"
-			]
-		}
-	}
+  "header": ["Domovská", "O firmě", "Odbornost", "Kontakty"],
+  "hero": {
+    "title": "Víme, jak maximalizovat zisky při provádění úspěšných obchodních transakcí",
+    "cta": "Poslat žádost"
+  },
+  "about": {
+    "title": "EPI group — nezávislá obchodní společnost",
+    "text-1": "Pracujeme otevřeně, čestně, transparentně a každému zákazníkovi nabízíme spolehlivé partnerství. Hlavní prioritou naší činnosti je kvalita a odpovědnost",
+    "text-2": "vůči každému z našich partnerů.",
+    "text-3": "Skupina EPI nabízí výhradně certifikované produkty od spolehlivých dodavatelů, které splňují nejvyšší mezinárodní standarty kvality.",
+    "accent-text-1": "",
+    "accent-text-2": "",
+    "cta": "Dozvědět se více o nás"
+  },
+  "activitieslider": {
+    "title-1": "Hlavní směry",
+    "title-2": "oblasti činnosti",
+    "text": "Silná vědecká a technická základna podniku nám umožňuje řešit problémy jakékoli složitosti",
+    "slides": [
+      {
+        "title": "Energetika",
+        "text": "Náš tým má rozsáhlé zkušenosti z různých odvětví energetiky, což nám umožňuje pochopit současnou situaci a vývojové trendy na trzích se zemním plynem, ropou a uhlím.",
+        "url": "energy"
+      },
+      {
+        "title": "Minerály a kovy",
+        "text": "Diverzifikací geografického a strategického propojení v různých zemích se budete moci s námi podílet na vymezené specializované dodávce nerostů, kovů a derivátů.",
+        "url": "resourses"
+      },
+      {
+        "title": "Hnojiva",
+        "text": "Naše společnost nabízí širokou škálu hnojiv pro zemědělství, což nám umožňuje plně uspokojit potřeby našich zákazníků.",
+        "url": "fertilizers"
+      },
+      {
+        "title": "Amoniak",
+        "text": "Nabízíme čpavek výhradně certifikované kvality od spolehlivých dodavatelů, kteří splňují nejvyšší mezinárodní standarty kvality.",
+        "url": "ammonia"
+      }
+    ],
+    "cta": "Poslat žádost"
+  },
+  "tradeinvestments": {
+    "title": "Obchodní financování",
+    "text-1": "Pomáháme dovážejícím společnostem vyhnout se 100% platbě předem při vypořádání s dodavately a financování krátkodobé, střední a dlouhodobé.",
+    "slides": [
+      {
+        "title": "Pokud jste dovozce",
+        "arguments": [
+          "není třeba použít oběžná aktiva",
+          "příležitost spolupracovat s dodavately za nejvýhodnějších podmínek a za nejvýhodnější ceny",
+          "žádná rizika, že dodavatel zboží po platbě na základě smlouvy nedodá"
+        ]
+      },
+      {
+        "title": "Pokud jste vývozce",
+        "arguments": [
+          "záruka platby za zaslané zboží",
+          "zvýšení objemu dodávek",
+          "rozšíření klientské základny z důvodu výhodnějších dodacích a platebních podmínek"
+        ]
+      }
+    ],
+    "cta": "Poslat žádost"
+  },
+  "results": {
+    "title": "Fakta, čísla, výsledky",
+    "year": {
+      "value": "15+",
+      "text": "Let zkušeností"
+    },
+    "projects": {
+      "value": "100+",
+      "text": "Projekty"
+    },
+    "clients": {
+      "value": "50+",
+      "text": "Partneři a klientů"
+    },
+    "countries": {
+      "value": "20+",
+      "text": "Zemí po celém světě"
+    }
+  },
+  "contact": {
+    "title": "Pošlete nám žádost",
+    "text-1": "Chcete se dozvědět více o skupině EPI s.r.o.?",
+    "text-2": "Od služeb k přístupu a lidem - rádi komunikujeme",
+    "tel": "+420 545 240 759",
+    "tellink": "tel:+420 545 240 759",
+    "email": "info@epigroup.cz",
+    "emaillink": "mailto:info@epigroup.cz",
+    "cta": "Poslat žádost",
+    "ctasent": "Poslal",
+    "formplaceholders": {
+      "name": "Název",
+      "company": "Společnost",
+      "email": "Emailová adresa",
+      "tel": "Telefon (volitelné)",
+      "message": "Zpráva"
+    }
+  },
+  "footer": {
+    "license": "© 2020 EPI GROUP s.r.o"
+  },
+  "resoursesPage": {
+    "title": "Minerály a kovy",
+    "content": {
+      "title": "Minerály a kovy",
+      "subtitle": "",
+      "text": "Diverzifikací geografického a strategického propojení v různých zemích se budete moci s námi podílet na vymezené specializované dodávce nerostů, kovů a derivátů.",
+      "list": ["", "", ""]
+    },
+    "blocks": [
+      [
+        [
+          [
+            "Koncentrát rutilu",
+            "Koncentrát ilmenitu",
+            "Koncentrát zirkónu",
+            "Práškový koncentrát zirkónu",
+            "Práškový koncentrát zirkónu"
+          ],
+          [
+            "Titanová houba",
+            "Titanová struska",
+            "Titanové ingoty",
+            "Měď",
+            "Hliník"
+          ]
+        ],
+        [
+          "Granular distyne-sillimant concentrate",
+          "Powdered distyne-sillimant concentrate",
+          "Powdered distyne-sillimant concentrate",
+          "Dense natural sand",
+          "Quartz sand for the glass industry"
+        ]
+      ]
+    ],
+    "blockNames": [["Kovy", "Písek"]]
+  },
+  "fertilizersPage": {
+    "title": "Hnojiva",
+    "content": {
+      "title": "Hnojiva",
+      "subtitle": "",
+      "text": "Naše společnost nabízí širokou škálu hnojiv pro zemědělství, což nám umožňuje plně uspokojit potřeby našich zákazníků",
+      "list": ["", "", ""]
+    },
+    "blocks": [
+      [
+        [
+          "Dusičnan amonný",
+          "Dusičnan amonný vápenatý",
+          "Dusičnan amonný vápenatý",
+          "Síran amonný",
+          "Směs močoviny a amoniaku"
+        ],
+        [
+          "Diamonium fosfát",
+          "Monoamonium fosfát",
+          "Trojitý superfosfát",
+          "Superfosfát"
+        ]
+      ],
+      [
+        [
+          "15-15-15",
+          "16-16-16",
+          "16-20-0",
+          "20-20-0",
+          "20-10-10",
+          "16-16-8",
+          "10-26-26",
+          "16-8-8",
+          "A mnoho dalších speciálních směsí NP / NPK se stopovými prvky nebo bez nich"
+        ],
+        [
+          "Granulovaná a formovaná síra",
+          "Drcená krmná síra",
+          "Kyselina fosfor-fosforečná",
+          "Kyselina sírová"
+        ]
+      ]
+    ],
+    "blockNames": [
+      ["Dusíkatá hnojiva", "Fosforečná hnojiva"],
+      ["Složitá hnojiva", "Suroviny pro výrobu"]
+    ]
+  },
+  "ammoniaPage": {
+    "title": "Amoniak",
+    "content": {
+      "title": "Amoniak",
+      "subtitle": "",
+      "text": "Nabízíme čpavek výhradně certifikované kvality od spolehlivých dodavatelů, kteří splňují nejvyšší mezinárodní standarty kvality.",
+      "list": ["", "", ""]
+    }
+  },
+  "energyPage": {
+    "title": "Energetika",
+    "content": {
+      "title": "Energetika",
+      "subtitle": "Náš tým má rozsáhlé zkušenosti z různých odvětví energetiky, což nám umožňuje pochopit současnou situaci a vývojové trendy na trzích se zemním plynem, ropou a uhlím.",
+      "text": "Naše zkušenosti jsou zárukou konkurenčních podmínek pro dodávky energetických zdrojů našim zákazníkům.",
+      "list": [
+        "příznivé podmínky spolupráce",
+        "světové standarty kvality",
+        "nepřetržitá a efektivní práce"
+      ]
+    }
+  }
 }
