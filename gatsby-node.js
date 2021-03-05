@@ -14,8 +14,8 @@ exports.onCreateWebpackConfig = ({
       alias: {
         TweenMax: 'gsap/dist/gsap.min.js',
         TimelineMax: 'gsap/dist/gsap.min.js',
-        Scrollbar: 'smooth-scrollbar/dist/smooth-scrollbar.js',
-        ScrollMagic: 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+        // Scrollbar: 'smooth-scrollbar/dist/smooth-scrollbar.js',
+        // ScrollMagic: 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
         'animation.gsap':
           'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
         'debug.addIndicators':
