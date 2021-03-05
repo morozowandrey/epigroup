@@ -64,6 +64,41 @@
     ],
     "cta": "Send a request"
   },
+  "extraServices": {
+    "title": "Other services",
+    "text": "We provide consulting services in building partnerships and intermediaries in trade, science and other fields. We have ability to monitor services in Ukraine according to a specific assignment of a partner and implement complex logistics solutions",
+    "blocks": [
+      [
+        [
+          "Mediation in relations with entities interested in cooperation in the field of trade, science, research, education, technological cooperation, as well as in other areas",
+          "Search for suitable trade and investment partners for entities interested in Ukraine",
+          "Search for business opportunities for organizations that plan to operate in Ukraine",
+          "Monitoring of events in Ukraine on a specific assignment of a partner with an emphasis on a specific area of interests of the partner",
+          "Monitoring of possible subjects of cooperation in Ukraine",
+          "Correct establishment and development of relations in the sphere of interests of a partner in Ukraine",
+          "Representing the interests of the Czech Republic, European and non-European organizations in Ukraine"
+        ],
+        [
+          "Сonstant monitoring of events in Ukraine, for consultation on appropriate measures in connection with the development of the situation",
+          "Monitoring in the legal, business, political spheres, as well as in the field of security of Ukraine",
+          "Advising and liaising between the Czech Republic, European and non-European organizations and organizations in Ukraine",
+          "Legal advice and support in process of concluding agreements and contracts with Ukrainian organizations",
+          "Consulting and providing partners in the field of logistics of goods, finance and information",
+          "Consultations on the specific appointment of a partner on the territory of Ukraine"
+        ]
+      ],
+      [
+        [
+          "Complex logistics solutions",
+          "Transport solutions",
+          "Consultations and providing storage and transportation in Ukraine and abroad (by land, sea and air)",
+          "Transport and logistics monitoring",
+          "Ensuring transport and logistics security, risk assessment, control of transport security"
+        ]
+      ]
+    ],
+    "blockNames": [["Affiliate program", "Consulting"], ["Logistics"]]
+  },
   "results": {
     "title": "Facts, numbers, results",
     "year": {

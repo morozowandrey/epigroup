@@ -1,289 +1,289 @@
-@import "../styles/var.scss";
-@import "../styles/media-mixins.scss";
+@import '../styles/var.scss';
+@import '../styles/media-mixins.scss';
 
 .page {
-	position: relative;
+  position: relative;
 
-	&-header {
-		// position: sticky;
-		// top: 0;
-		// z-index: 5;
-		position: relative;
-		background-color: $gray;
-	}
+  &-header {
+    // position: sticky;
+    // top: 0;
+    // z-index: 5;
+    position: relative;
+    background-color: $gray;
+  }
 
-	&-content {
-		background-color: $gray;
+  &-content {
+    background-color: $gray;
 
-		&-description {
-			display: grid;
-			grid-gap: 64px;
-			grid-template-columns: repeat(2, 1fr);
+    &-description {
+      display: grid;
+      grid-gap: 64px;
+      grid-template-columns: repeat(2, 1fr);
 
-			padding-top: 232px;
-			padding-bottom: 160px;
-			align-items: center;
+      padding-top: 232px;
+      padding-bottom: 160px;
+      align-items: center;
 
-			border-bottom: 1px solid rgba(42, 71, 113, 0.2);
+      border-bottom: 1px solid rgba(42, 71, 113, 0.2);
 
-			@include media-breakpoint-down(768) {
-				grid-template-columns: none;
-				padding: 96px 0 64px;
-			}
+      @include media-breakpoint-down(768) {
+        grid-template-columns: none;
+        padding: 96px 0 64px;
+      }
 
-			&_standalone {
-				padding-bottom: 232px;
-				grid-gap: 124px;
+      &_standalone {
+        padding-bottom: 232px;
+        grid-gap: 124px;
 
-				@include media-breakpoint-down(768) {
-					padding: 96px 0;
-					grid-gap: 64px;
-				}
+        @include media-breakpoint-down(768) {
+          padding: 96px 0;
+          grid-gap: 64px;
+        }
 
-				.page-content-description__title {
-					@include media-breakpoint-down(768) {
-						margin-bottom: 40px;
-					}
-				}
-			}
+        .page-content-description__title {
+          @include media-breakpoint-down(768) {
+            margin-bottom: 40px;
+          }
+        }
+      }
 
-			&-block {
-				display: flex;
-				align-self: flex-start;
-				justify-content: flex-start;
-				flex-direction: column;
-			}
+      &-block {
+        display: flex;
+        align-self: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
 
-			&__title {
-				margin-bottom: 24px;
+      &__title {
+        margin-bottom: 24px;
 
-				font-family: Lora;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 40px;
-				// line-height: 56px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        // line-height: 56px;
 
-				color: $blue;
+        color: $blue;
 
-				@include media-breakpoint-down(768) {
-					font-size: 22px;
-					line-height: 28px;
-					margin-bottom: 0;
-				}
-			}
+        @include media-breakpoint-down(768) {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 0;
+        }
+      }
 
-			&__text {
-				font-family: Inter;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 18px;
-				line-height: 32px;
+      &__text {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
 
-				color: $blue;
+        color: $blue;
 
-				@include media-breakpoint-down(768) {
-					font-size: 16px;
-					line-height: 26px;
-				}
+        @include media-breakpoint-down(768) {
+          font-size: 16px;
+          line-height: 26px;
+        }
 
-				&_mb {
-					margin-bottom: 24px;
-				}
-			}
-		}
+        &_mb {
+          margin-bottom: 24px;
+        }
+      }
+    }
 
-		&-blocks {
-			padding: 160px 0;
+    &-blocks {
+      padding: 160px 0;
 
-			@include media-breakpoint-down(768) {
-				padding: 64px 0 96px;
-			}
+      @include media-breakpoint-down(768) {
+        padding: 64px 0 96px;
+      }
 
-			&-group {
-				margin-bottom: 120px;
-				display: grid;
-				grid-gap: 64px;
-				grid-template-columns: repeat(2, 1fr);
+      &-group {
+        margin-bottom: 120px;
+        display: grid;
+        grid-gap: 64px;
+        grid-template-columns: repeat(2, 1fr);
 
-				@include media-breakpoint-down(768) {
-					margin-bottom: 64px;
-					grid-template-columns: none;
-				}
+        @include media-breakpoint-down(768) {
+          margin-bottom: 64px;
+          grid-template-columns: none;
+        }
 
-				&:last-of-type {
-					margin-bottom: 0;
-				}
-			}
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
 
-			&-block {
-				border-bottom: 1px solid rgba(42, 71, 113, 0.2);
-				max-height: 80px;
-				overflow: hidden;
-				transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+      &-block {
+        border-bottom: 1px solid rgba(42, 71, 113, 0.2);
+        max-height: 80px;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0, 1, 0, 1);
 
-				@include media-breakpoint-down(768) {
-					max-height: 50px;
-				}
+        @include media-breakpoint-down(768) {
+          max-height: 50px;
+        }
 
-				&_open {
-					transition: all 0.3s ease;
-					padding-bottom: 160px;
-					height: auto;
-					max-height: 1000px;
-					overflow: auto;
-					border-bottom: 1px solid rgba(42, 71, 113, 0.2);
+        &_open {
+          transition: all 0.3s ease;
+          padding-bottom: 160px;
+          height: auto;
+          max-height: 1000px;
+          // overflow: auto;
+          border-bottom: 1px solid rgba(42, 71, 113, 0.2);
 
-					@include media-breakpoint-down(768) {
-						padding-bottom: 64px;
-						overflow: inherit;
-					}
-				}
+          @include media-breakpoint-down(768) {
+            padding-bottom: 64px;
+            overflow: inherit;
+          }
+        }
 
-				&-header {
-					margin-bottom: 48px;
-					align-items: baseline;
-					cursor: pointer;
+        &-header {
+          margin-bottom: 48px;
+          align-items: baseline;
+          cursor: pointer;
 
-					@include media-breakpoint-down(768) {
-						align-items: center;
-					}
+          @include media-breakpoint-down(768) {
+            align-items: center;
+          }
 
-					&__title {
-						font-family: Lora;
-						font-style: normal;
-						font-weight: normal;
-						font-size: 40px;
-						line-height: 56px;
+          &__title {
+            font-family: Lora;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 56px;
 
-						color: $blue;
+            color: $blue;
 
-						@include media-breakpoint-down(768) {
-							font-size: 22px;
-							line-height: 28px;
-						}
-					}
+            @include media-breakpoint-down(768) {
+              font-size: 22px;
+              line-height: 28px;
+            }
+          }
 
-					&__open,
-					&__close {
-						display: block;
+          &__open,
+          &__close {
+            display: block;
 
-						width: 24px;
-						height: 24px;
+            width: 24px;
+            height: 24px;
 
-						background-repeat: no-repeat;
-						background-size: cover;
-						background-position: center;
-					}
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
 
-					&__open {
-						background-image: url(../../static/plus.svg);
-					}
+          &__open {
+            background-image: url(../../static/plus.svg);
+          }
 
-					&__close {
-						background-image: url(../../static/minus.svg);
-					}
-				}
+          &__close {
+            background-image: url(../../static/minus.svg);
+          }
+        }
 
-				&-content {
-					display: flex;
-					align-self: flex-start;
-					justify-content: flex-start;
+        &-content {
+          display: flex;
+          align-self: flex-start;
+          justify-content: flex-start;
 
-					@include media-breakpoint-down(768) {
-						flex-direction: column;
-					}
+          @include media-breakpoint-down(768) {
+            flex-direction: column;
+          }
 
-					&_paired {
-						display: flex;
-						align-self: flex-start;
-						justify-content: flex-start;
+          &_paired {
+            display: flex;
+            align-self: flex-start;
+            justify-content: flex-start;
 
-						@include media-breakpoint-down(1024) {
-							flex-direction: column;
+            @include media-breakpoint-down(1024) {
+              flex-direction: column;
 
-							.page-content-blocks-block-content-list {
-								margin-bottom: 16px;
+              .page-content-blocks-block-content-list {
+                margin-bottom: 16px;
 
-								&:last-of-type {
-									margin-bottom: 0;
-								}
-							}
-						}
-					}
+                &:last-of-type {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
 
-					&-list {
-						list-style: none;
-						margin: 0;
-						margin-right: 80px;
+          &-list {
+            list-style: none;
+            margin: 0;
+            margin-right: 80px;
 
-						@include media-breakpoint-down(812) {
-							margin-right: 0px;
-						}
+            @include media-breakpoint-down(812) {
+              margin-right: 0px;
+            }
 
-						@include media-breakpoint-down(768) {
-							margin-bottom: 16px;
-						}
+            @include media-breakpoint-down(768) {
+              margin-bottom: 16px;
+            }
 
-						&_paired {
-							max-width: 260px;
+            &_paired {
+              max-width: 260px;
 
-							@include media-breakpoint-down(1024) {
-								max-width: unset;
-							}
-						}
+              @include media-breakpoint-down(1024) {
+                max-width: unset;
+              }
+            }
 
-						&:last-of-type {
-							margin-right: 0;
+            &:last-of-type {
+              margin-right: 0;
 
-							@include media-breakpoint-down(768) {
-								margin-bottom: 0;
-							}
-						}
+              @include media-breakpoint-down(768) {
+                margin-bottom: 0;
+              }
+            }
 
-						&_content {
-							max-width: unset;
-						}
+            &_content {
+              max-width: unset;
+            }
 
-						&__item {
-							margin: 0;
-							margin-bottom: 16px;
-							position: relative;
-							padding-left: 15px;
+            &__item {
+              margin: 0;
+              margin-bottom: 16px;
+              position: relative;
+              padding-left: 15px;
 
-							font-family: Inter;
-							font-style: normal;
-							font-weight: normal;
-							font-size: 18px;
-							line-height: 32px;
+              font-family: Inter;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 32px;
 
-							color: $blue;
+              color: $blue;
 
-							@include media-breakpoint-down(768) {
-								font-size: 16px;
-								line-height: 26px;
-							}
+              @include media-breakpoint-down(768) {
+                font-size: 16px;
+                line-height: 26px;
+              }
 
-							&:last-of-type {
-								margin-bottom: 0;
-							}
+              &:last-of-type {
+                margin-bottom: 0;
+              }
 
-							&::after {
-								content: "";
-								position: absolute;
-								left: 2px;
-								top: 50%;
-								transform: translate(-50%);
+              &::after {
+                content: '';
+                position: absolute;
+                left: 2px;
+                top: 50%;
+                transform: translate(-50%);
 
-								width: 3px;
-								height: 3px;
+                width: 3px;
+                height: 3px;
 
-								border-radius: 50%;
-								background-color: $blue;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+                border-radius: 50%;
+                background-color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

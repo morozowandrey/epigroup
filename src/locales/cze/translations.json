@@ -64,6 +64,41 @@
     ],
     "cta": "Poslat žádost"
   },
+  "extraServices": {
+    "title": "Ostatní služby",
+    "text": "We provide consulting services in building partnerships and intermediaries in trade, science and other fields. We have ability to monitor services in Ukraine according to a specific assignment of a partner and implement complex logistics solutions",
+    "blocks": [
+      [
+        [
+          "Zprostředkování vztahů subjektům se zájmem o spolupráci v oblasi obchodu, vědy, výzkumu, vzdělávání, technologické spolupráce a také v dalších obastech",
+          "Vyhledávání vhodných obchodníchi a investičních partnerů pro subjekty se zájmem o oblast UA",
+          "Vyhledávání obchodních příležitostí pro subjekty, plánující vstup na UA",
+          "Monitoring UA prostředí dle konkrétního zadání partnera se zaměřením na specifickou oblast zájmu patnera",
+          "Monitoring možných subjektů kooperace na UA",
+          "Podpora vhodného navázání a rozvoje vztahů v oblasti zájmů partnera na UA",
+          "Zastupování zájmů CZ, evropských i mimoevropských subjektů na území UA"
+        ],
+        [
+          "Kontinuální monitoring UA prostředí, konzultace vhodných opatření ve vztahu k vývoji situace",
+          "Monitoring UA prostředí - právní, obchodní, politické, bezpečnostní",
+          "Poradenství a zajišťování komunikace mezi CZ, evropskými i mimoevropskými subjekty a subjekty na UA",
+          "Právní poradenství a podpora při uzavírání dohod a smluv se subjekty z UA",
+          "Konzultace a zajištění partnerů pro oblast logistiky zboží, financí a informací",
+          "Konzultace a zajištění skladování a dopravy na území UA a její napojení na mezinárodní (pozemní, námořní i letecká)",
+          "Poradenství pro konkrétní zadání partnera na oblast UA"
+        ]
+      ],
+      [
+        [
+          "Kompletní logistická řešení",
+          "Přepravní řešení",
+          "Monitoring dopravy a logistiky",
+          "Zajištění bezpečnoti dopravy a logistiky, vyhodnocování rizik, kontorla bezpečnosti přepravy"
+        ]
+      ]
+    ],
+    "blockNames": [["Partnerský program", "Konzultační"], ["Logistika"]]
+  },
   "results": {
     "title": "Fakta, čísla, výsledky",
     "year": {

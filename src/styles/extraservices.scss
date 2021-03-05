@@ -1,0 +1,25 @@
+@import '../styles/var.scss';
+@import '../styles/media-mixins.scss';
+
+.extraservices {
+  &-content {
+    &-description {
+      padding-top: 160px !important;
+      padding-bottom: 120px !important;
+
+      @include media-breakpoint-down(768) {
+        padding: 96px 0 64px !important;
+      }
+    }
+
+    &-blocks {
+      padding: 80px 0 !important;
+
+      &-block {
+        &_open {
+          padding-bottom: 64px !important;
+        }
+      }
+    }
+  }
+}
