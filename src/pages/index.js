@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import loadable from '@loadable/component'
 
 import Layout from '../layout'
@@ -9,6 +9,10 @@ import ExtraServices from '../components/extra-services.js'
 import Results from '../components/results'
 import Footer from '../components/footer'
 import Header from '../components/header'
+
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 // This dynamic imports will not be processed server-side
 const LoadableActivitySlider = loadable(
@@ -29,6 +33,26 @@ export default function Index() {
     // Make scroll behavior of internal links smooth
     require('smooth-scroll')('a[href*="#"]')
   }
+
+  useEffect(() => {
+    ScrollTrigger.matchMedia({
+      '(min-width: 880px) and (max-width: 1440px)': function () {
+        // gsap.to(animationWrap.current, {
+        //   xPercent: -62.4,
+        //   ease: 'none',
+        //   scrollTrigger: {
+        //     trigger: horisontalSlider.current,
+        //     start: 'top 100px',
+        //     end: '+=100%',
+        //     scrub: 0.5,
+        //     pin: true,
+        //     pinSpacing: true,
+        //     anticipatePin: 1,
+        //   },
+        // })
+      },
+    })
+  }, [])
 
   return (
     <Layout>
