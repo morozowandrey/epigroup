@@ -1,11 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import Footer from './components/footer'
-import Header from './components/header'
-
-import Scrollbar from 'react-smooth-scrollbar'
-
 import { withTrans } from './i18n/withTrans'
 
 import favicon16 from './images/epi-group-favicon-16.png'
@@ -33,9 +28,6 @@ const Layout = ({ children, t, i18n }) => {
         ></link>
       </Helmet>
 
-      {/* <Scrollbar damping={0.1} invertDelta={true}>
-        {children}
-      </Scrollbar> */}
       <div>{children}</div>
     </div>
   )

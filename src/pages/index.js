@@ -10,9 +10,12 @@ import Results from '../components/results'
 import Footer from '../components/footer'
 import Header from '../components/header'
 
-import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+import LocomotiveScrollWrap from '../components/locomotiveScroll'
+import '../styles/locomotiveScroll.scss'
+
+// import { gsap } from 'gsap'
+// import ScrollTrigger from 'gsap/ScrollTrigger'
+// gsap.registerPlugin(ScrollTrigger)
 
 // This dynamic imports will not be processed server-side
 const LoadableActivitySlider = loadable(
@@ -29,11 +32,6 @@ const LoadableTradeInvestments = loadable(
 )
 
 export default function Index() {
-  if (typeof window !== 'undefined') {
-    // Make scroll behavior of internal links smooth
-    require('smooth-scroll')('a[href*="#"]')
-  }
-
   // useEffect(() => {
   //   ScrollTrigger.matchMedia({
   //     '(min-width: 880px) and (max-width: 1440px)': function () {
@@ -56,6 +54,7 @@ export default function Index() {
 
   return (
     <Layout>
+      <LocomotiveScrollWrap />
       <Header />
       <Hero />
       <About />

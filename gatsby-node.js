@@ -8,6 +8,19 @@ exports.onCreateWebpackConfig = ({
   actions,
   path,
 }) => {
+  if (stage === 'build-html' || stage === 'develop-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /locomotive-scroll/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+
   actions.setWebpackConfig({
     resolve: {
       modules: ['node_modules'],
